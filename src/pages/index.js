@@ -8,7 +8,7 @@ import { Button, Grid, Row, Column } from "semantic-ui-react";
 import BannerImage from "../components/images/BannerImage";
 import Tablet from "../components/Tablet";
 import FastImage from "../components/images/FastImage";
-// import FlexibleImage from "../components/images/FlexibleImage";
+import FlexibleImage from "../components/images/FlexibleImage";
 import ForYouImage from "../components/images/ForYouImage";
 
 const IndexPage = () => (
@@ -92,7 +92,7 @@ const IndexPage = () => (
               </ul>
             </Grid.Column>
             <Grid.Column>
-              {/* <FlexibleImage /> */}
+              <FlexibleImage />
               <h1 className="centered title-color">FLEXIBLE </h1>
               <ul>
                 <li>

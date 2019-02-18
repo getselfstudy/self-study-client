@@ -19,7 +19,7 @@ const FastImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "mobile.PNG" }) {
           childImageSharp {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
