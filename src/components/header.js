@@ -1,66 +1,118 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import React from "react";
+import React, { Component } from "react";
 import Logo_Image from "./Logo_Image.js";
+import { Menu } from "semantic-ui-react";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#ffffff`,
-      marginBottom: `1.45rem`
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`
-      }}
-    >
-      <div
+export default class Header extends Component {
+  state = {};
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+  render() {
+    const { activeItem } = this.state;
+    return (
+      <header
         style={{
-          display: "grid",
-          gridTemplateColumns: " repeat(2, 1fr)",
-          gridGap: "20px"
+          overflow: "hidden",
+          background: `#ffffff`,
+          marginBottom: `1.45rem`,
+          position: "fixed",
+          width: "100%",
+          zIndex: "900"
         }}
       >
-        <div>
-          <Link
-            to="/"
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `1.45rem 1.0875rem`
+          }}
+        >
+          <div
             style={{
-              color: `#104b87`,
-              textDecoration: `none`
+              display: "grid",
+              gridTemplateColumns: " repeat(2, 1fr)",
+              gridGap: "20px"
             }}
           >
-            {" "}
-            <Logo_Image />
-          </Link>
+            <div>
+              <Link
+                to="/"
+                style={{
+                  color: `#104b87`,
+                  textDecoration: `none`
+                }}
+              >
+                {" "}
+                <Logo_Image />
+              </Link>
+            </div>
+            <div>
+              {" "}
+              <h3
+                style={{
+                  color: "#104b87",
+                  float: "left",
+                  paddingLeft: "20px",
+                  verticalAlign: "middle"
+                }}
+              >
+                {" "}
+                for Nurse Anesthesia
+              </h3>
+            </div>
+          </div>
         </div>
-        <div>
-          {" "}
-          <h3
-            style={{
-              color: "#104b87",
-              float: "left",
-              paddingLeft: "20px",
-              verticalAlign: "middle"
-            }}
-          >
+        <div className="container-body">
+          <Menu style={{ justifyContent: "center" }}>
             {" "}
-            for Nurse Anesthesia
-          </h3>
+            <Link to="/features">
+              <Menu.Item
+                name="features"
+                active={activeItem === "features"}
+                onClick={this.handleItemClick}
+              >
+                Features
+              </Menu.Item>
+            </Link>
+            <Link to="/crna">
+              <Menu.Item
+                name="crna"
+                active={activeItem === "crna"}
+                onClick={this.handleItemClick}
+              >
+                CRNA
+              </Menu.Item>
+            </Link>
+            <Link to="/srna">
+              <Menu.Item
+                name="srna"
+                active={activeItem === "srna"}
+                onClick={this.handleItemClick}
+              >
+                SRNA
+              </Menu.Item>
+            </Link>
+            <Link to="/anpd">
+              <Menu.Item
+                name="anpd"
+                active={activeItem === "anpd"}
+                onClick={this.handleItemClick}
+              >
+                Program Directors
+              </Menu.Item>
+            </Link>
+          </Menu>
         </div>
-      </div>
-    </div>
-  </header>
-);
+      </header>
+    );
+  }
+}
 
-Header.propTypes = {
-  siteTitle: PropTypes.string
-};
+// Header.propTypes = {
+//   siteTitle: PropTypes.string
+// };
 
-Header.defaultProps = {
-  siteTitle: ``
-};
-
-export default Header;
+// Header.defaultProps = {
+//   siteTitle: ``
+// };

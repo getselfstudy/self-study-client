@@ -2,11 +2,16 @@
   line-height: 3;
 } */
 
+* {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
 .title-color {
   color: #104b87;
 }
 
-.container-bottom{
+.container-bottom {
   background-color: #104b87;
   color: white;
   padding: 20px 0 20px;
