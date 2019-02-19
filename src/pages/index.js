@@ -120,11 +120,54 @@ const IndexPage = () => (
                   practice tests
                 </li>
               </ul>
+
+              <div className="centered"><Link to="/features"><Button color='orange' size="huge" style={{width:'90%'}}>LEARN MORE</Button></Link></div>
+              
             </Grid.Column>
           </Grid.Row>
         </Grid>
       </div>
-    </div>
+        <div className="container-bottom"> 
+        <div className="container-body">
+          <div className="centered">
+            <h3> Our over 1900 questions in SelfStudyPLUS for Nurse Anesthesia are written by practitioners
+at top hospitals and universities, then carefully curated and edited by:  
+</h3>
+</div> 
+<hr style={{color:'red'}}/> 
+<div className="centered"> 
+<h1> Our Experts </h1>
+<Grid relaxed stackable columns ={3}>
+<Grid.Row>
+  <Grid.Column><h1><strong>Dr. Franklin McShane
+
+DNP, CRNA, APNP</strong> Program Director </h1><p> Rosalind Franklin University
+
+of Medicine and Science
+
+Chicago, IL </p>
+  </Grid.Column>
+  <Grid.Column><h1><strong>Peter J. Kallio
+
+DNP, CRNA, APNP</strong> Associate Program Director </h1><p> Rosalind Franklin University
+
+of Medicine and Science
+
+Chicago, IL</p>
+  </Grid.Column>
+  <Grid.Column><h1><strong> 
+  Edward Zhovtis
+
+MS </strong>Adjunct Faculty </h1><p>Rosalind Franklin University
+
+of Medicine and Science
+
+Chicago, IL </p></Grid.Column>
+  </Grid.Row>
+</Grid>
+</div>
+</div>
+    </div></div>
   </Layout>
 );
 

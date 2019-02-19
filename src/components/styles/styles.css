@@ -6,6 +6,13 @@
   color: #104b87;
 }
 
+.container-bottom{
+  background-color: #104b87;
+  color: white;
+  padding: 20px 0 20px;
+  margin: 20px 0 0;
+}
+
 .centered {
   text-align: center;
 }

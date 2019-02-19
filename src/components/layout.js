@@ -6,6 +6,7 @@ import Header from "./header";
 import "./layout.css";
 import "./styles/styles.css";
 import "semantic-ui-css/semantic.min.css";
+import { Grid } from "semantic-ui-react";
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -30,9 +31,14 @@ const Layout = ({ children }) => (
         > */}
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <div className="container-bottom">
+          <div className="container-body centered">
+        <p>  OpenAnesthesia™ content is intended for educational purposes only and not intended as medical advice. Reuse of OpenAnesthesia™ content for commercial purposes of any kind is prohibited.
+         </p> <p> Copyright © {new Date().getFullYear()} </p></div>
+          </div>
+      
+    
+       
         </footer>
         {/* </div> */}
       </>
