@@ -21,6 +21,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
+
         {/* <div
           style={{
             margin: `0 auto`,
@@ -32,13 +33,17 @@ const Layout = ({ children }) => (
         <main>{children}</main>
         <footer>
           <div className="container-bottom">
-          <div className="container-body centered">
-        <p>  OpenAnesthesia™ content is intended for educational purposes only and not intended as medical advice. Reuse of OpenAnesthesia™ content for commercial purposes of any kind is prohibited.
-         </p> <p> Copyright © {new Date().getFullYear()} </p></div>
+            <div className="container-body centered">
+              <p>
+                {" "}
+                OpenAnesthesia™ content is intended for educational purposes
+                only and not intended as medical advice. Reuse of
+                OpenAnesthesia™ content for commercial purposes of any kind is
+                prohibited.
+              </p>{" "}
+              <p> Copyright © {new Date().getFullYear()} </p>
+            </div>
           </div>
-      
-    
-       
         </footer>
         {/* </div> */}
       </>

@@ -15,7 +15,7 @@ import ForYouImage from "../components/images/ForYouImage";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-
+    <div style={{ paddingTop: "15vh" }} />
     <div className="image-wrapper-header space-below">
       <BannerImage />
       <div className="image-text-header">
