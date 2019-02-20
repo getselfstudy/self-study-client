@@ -4,11 +4,19 @@
 
 * {
   font-size: 1.2rem;
-  line-height: 1.5;
 }
 
 .title-color {
   color: #104b87;
+}
+
+.sub-orange {
+  color: #e45026;
+}
+
+.no-margin {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .container-bottom {
@@ -44,8 +52,7 @@
 }
 
 .container-body {
-  margin-right: 20vw;
-  margin-left: 20vw;
+  margin: 30px 25vw 30px;
 }
 
 @media only screen and (max-width: 600px) {
