@@ -104,6 +104,7 @@ export default class Header extends Component {
             </Link>
           </Menu>
         </div>
+        <div className="blue-header-line" />
       </header>
     );
   }

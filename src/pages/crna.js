@@ -10,7 +10,7 @@ import SEO from "../components/seo";
 const crna = () => (
   <Layout>
     <SEO title="CRNA" />\<div className="container-bottom" />
-    <div style={{ paddingTop: "15vh" }} />
+    <div style={{ paddingTop: "20vh" }} />
     <div className="container-body">
       {" "}
       <h1 className="title-color centered" style={{ marginBottom: "5vh" }}>
