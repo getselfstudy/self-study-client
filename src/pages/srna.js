@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import { Grid } from "semantic-ui-react";
 import Layout from "../components/layout";
@@ -7,7 +6,6 @@ import SEO from "../components/seo";
 import Srna1 from "../components/images/Srna1";
 import Srna2 from "../components/images/Srna2";
 import Vimeo from "@u-wave/react-vimeo";
-import { Button } from "semantic-ui-react";
 
 const srna = () => (
   <Layout>

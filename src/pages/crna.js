@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+
 import { Grid } from "semantic-ui-react";
 
 import Info from "../components/Info.js";

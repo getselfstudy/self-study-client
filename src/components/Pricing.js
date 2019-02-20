@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid } from "semantic-ui-react";
-import LogoBig from "./images/LogoBig";
+
 import InverseLogoBlue from "./images/InverseLogoBlue";
 export class pricing extends Component {
   render() {

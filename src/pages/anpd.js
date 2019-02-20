@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import PeopleBanner from "../components/images/PeopleBanner";
 import Info from "../components/Info.js";
-import { Grid, Button } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import Brain from "../components/images/Brain";
 import Vimeo from "@u-wave/react-vimeo";
 const anpd = () => (

@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout";
 
 import SEO from "../components/seo";
-import { Button, Grid, Row, Column, Icon } from "semantic-ui-react";
+import { Button, Grid } from "semantic-ui-react";
 
 import BannerImage from "../components/images/BannerImage";
 import Tablet from "../components/Tablet";

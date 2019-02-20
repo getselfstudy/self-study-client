@@ -6,7 +6,7 @@ import Header from "./header";
 import "./layout.css";
 import "./styles/styles.css";
 import "semantic-ui-css/semantic.min.css";
-import { Grid } from "semantic-ui-react";
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

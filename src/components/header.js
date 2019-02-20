@@ -1,8 +1,8 @@
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
+
 import React, { Component } from "react";
-import Logo_Image from "./Logo_Image.js";
-import { Menu, Grid } from "semantic-ui-react";
+
+import { Grid } from "semantic-ui-react";
 import LogoBig from "./images/LogoBig.js";
 
 export default class Header extends Component {
