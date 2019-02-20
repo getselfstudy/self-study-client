@@ -3,105 +3,99 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import Logo_Image from "./Logo_Image.js";
 import { Menu, Grid } from "semantic-ui-react";
+import LogoBig from "./images/LogoBig.js";
 
 export default class Header extends Component {
-  state = {};
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
   render() {
-    const { activeItem } = this.state;
     return (
       <header
         style={{
+          top: "0",
           overflow: "hidden",
           background: `#ffffff`,
-          marginBottom: `1.45rem`,
-          position: "fixed",
+          position: "sticky",
           width: "100%",
           zIndex: "900"
         }}
       >
         <div
           style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `1.45rem 1.0875rem`
+            margin: `0px auto`
           }}
         >
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: " 30% 15%",
-              gridGap: "20px"
-            }}
-          >
-            <div>
-              <Link
-                to="/"
-                style={{
-                  color: `#104b87`,
-                  textDecoration: `none`
-                }}
-              >
-                <Logo_Image />
-              </Link>
-            </div>
-            <div>
-              {" "}
-              <h3
-                style={{
-                  color: "#104b87",
-                  float: "left",
-                  paddingLeft: "20px",
-                  verticalAlign: "middle"
-                }}
-              >
-                {" "}
-                for Nurse Anesthesia
-              </h3>
-            </div>
+          <div className="container-body">
+            <Grid relaxed stackable columns={2}>
+              <Grid.Row>
+                <Grid.Column width={6} computer={6}>
+                  <Link
+                    to="/"
+                    style={{
+                      color: `#104b87`,
+                      textDecoration: `none`
+                    }}
+                  >
+                    <LogoBig />
+                  </Link>
+                </Grid.Column>
+                <Grid.Column width={6} computer={4}>
+                  <div>
+                    <h3
+                      style={{
+                        color: "#104b87",
+                        textAlign: "center",
+                        paddingLeft: "20px",
+                        verticalAlign: "middle",
+                        paddingTop: "20px"
+                      }}
+                    >
+                      {" "}
+                      for Nurse Anesthesia
+                    </h3>
+                  </div>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
           </div>
         </div>
-        <div className="container-body">
-          <Menu style={{ justifyContent: "center" }}>
-            {" "}
-            <Link to="/features">
-              <Menu.Item
-                name="features"
-                active={activeItem === "features"}
-                onClick={this.handleItemClick}
-              >
-                Features
-              </Menu.Item>
+        <div className="container-header">
+          {/* <nav>
+            <ul>
+              <li> Features </li>
+              <li> CRNA</li>
+              <li> SRNA</li>
+              <li> Program Directors</li>
+            </ul>
+          </nav> */}{" "}
+          <nav>
+            <Link
+              to="/features"
+              className="items"
+              activeStyle={{ color: "#e75328" }}
+            >
+              Features
             </Link>
-            <Link to="/crna">
-              <Menu.Item
-                name="crna"
-                active={activeItem === "crna"}
-                onClick={this.handleItemClick}
-              >
-                CRNA
-              </Menu.Item>
+            <Link
+              className="items"
+              to="/crna"
+              activeStyle={{ color: "#e75328" }}
+            >
+              CRNA
             </Link>
-            <Link to="/srna">
-              <Menu.Item
-                name="srna"
-                active={activeItem === "srna"}
-                onClick={this.handleItemClick}
-              >
-                SRNA
-              </Menu.Item>
+            <Link
+              to="/srna"
+              className="items"
+              activeStyle={{ color: "#e75328" }}
+            >
+              SRNA
             </Link>
-            <Link to="/anpd">
-              <Menu.Item
-                name="anpd"
-                active={activeItem === "anpd"}
-                onClick={this.handleItemClick}
-              >
-                Program Directors
-              </Menu.Item>
+            <Link
+              to="/anpd"
+              className="items"
+              activeStyle={{ color: "#e75328" }}
+            >
+              Program Directors
             </Link>
-          </Menu>
+          </nav>
         </div>
         <div className="blue-header-line" />
       </header>

@@ -1,25 +1,34 @@
 import React from "react";
+//unneeded unless links are added below. For all in-gatsby links, use <Link>. Otherwise, use <a></a> to other sites
 import { Link } from "gatsby";
 import { Grid, Button } from "semantic-ui-react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+
+//This handles the videos from vimeo. Don't remove unless a remplacement is installed.
+import Vimeo from "@u-wave/react-vimeo";
+
+//images served from the image folder through graphql
+import LogoBig from "../components/images/LogoBig";
 import Logo_Image from "../components/Logo_Image";
 import FeaturesHeader from "../components/images/FeaturesHeader";
 import FeaturesPhone from "../components/images/FeaturesPhone";
+import SrnaPerson from "../components/images/SrnaPerson.js";
+import CrnaPerson from "../components/images/CrnaPerson.js";
+
 const features = () => (
   <Layout>
     <SEO title="Features" />
-    <div style={{ paddingTop: "15vh" }} />
-    <div className="container-bottom" />
+
     <div className="container-body" style={{ paddingTop: "5vh" }}>
       <Grid columns={2} stackable relaxed>
         <Grid.Row>
           <Grid.Column>
             <h1 className="title-color"> Introducing </h1>
-
-            <Logo_Image />
-
+            <div style={{ width: "55%" }}>
+              <LogoBig />
+            </div>
             <h3 className="title-color" style={{ marginTop: "0" }}>
               for Nurse Anesthesia
             </h3>
@@ -28,9 +37,11 @@ const features = () => (
               SelfStudyPLUS personalizes learning using patented algorithms that
               assess and adapt to your individual needs.
             </p>
-            <Button color="orange" size="huge">
-              Learn More{" "}
-            </Button>
+            <Link to="/">
+              <Button color="orange" size="huge">
+                Learn More{" "}
+              </Button>
+            </Link>
           </Grid.Column>
           <Grid.Column>
             <FeaturesHeader />
@@ -44,44 +55,65 @@ const features = () => (
         Over 1900 questions from teaching practitioners at top universities!{" "}
       </h1>
     </div>
-    <h1 className="centered"> Video </h1>
-    <h1 className="centered"> Video </h1>
-    <p className="centered">
-      Program, Practice Tests, and Games in SelfstudyPLUS for Nurse Anesthesia
-    </p>
+    <div className="container-body centered">
+      <h1 className="centered title-color">
+        {" "}
+        Take a quick tour of SelfStudyPLUS{" "}
+      </h1>
+      <Vimeo video="210490351" showTitle="false" className="video" />
+      <p> Introducing SelfStudyPLUS for Nurse Anesthesia</p>
+      <br />
+      <Vimeo video="210765584" showTitle="false" className="video" />
+      <p>
+        Program, Practice Tests and Games in SelfstudyPLUS for Nurse Anesthesia
+      </p>
+    </div>
+
     <hr className="hr-blue" />
-    <br />
+
     <div className="container-body">
-      <Grid columns={2} stackable relaxed>
+      <Grid columns={4} stackable relaxed>
         <Grid.Row>
-          <Grid.Column>
-            <h1 style={{ color: "#E94E0E", fontSize: "40px" }}>
+          <Grid.Column width={6}>
+            <h1 style={{ color: "#E94E0E", fontSize: "2.5em" }}>
               {" "}
               NOW AVAILABLE FOR SRNAs
             </h1>
-            <p style={{ fontSize: "22px" }}>
+            <p>
               For busy SRNAs balancing hours in training with studying,
               SelfStudyPLUS offer the most flexible and personalized learning
               system available. It strengthens knowledge and retention with an
               innovative technology that is based on research in education,
-              psychology and neuroscience. SelfStudyPLUS asks you the questions
-              that you need, to master what you need to know for the NCE and
-              your practice.
+              psychology and neuroscience.
+            </p>
+            <p>
+              SelfStudyPLUS asks you the questions that you need, to master what
+              you need to know for the NCE and your practice.
             </p>
           </Grid.Column>
-          <Grid.Column>
-            <h1 style={{ color: "#05467E", fontSize: "40px" }}>
+          <Grid.Column width={2}>
+            <SrnaPerson />
+          </Grid.Column>
+          <Grid.Column width={6}>
+            <h1 style={{ color: "#05467E", fontSize: "2.5em" }}>
               {" "}
               NOW AVAILABLE FOR CRNAs
             </h1>
-            <p style={{ fontSize: "22px" }}>
+            <p>
               For CRNAs seeking to keep up-to-date, SelfStudyPLUS is the most
               convenient and focused knowledge app ever. Available 24/7, and
               responding directly to your personal knowledge as revealed through
-              each question you answer. This is a personalized system, tailored
-              to you, and delivered in a format that fits easily into your
-              schedule, whenever you have time
+              each question you answer.{" "}
             </p>
+            <p>
+              This is a personalized system, tailored to you, and delivered in a
+              format that fits easily into your schedule, whenever you have time
+            </p>
+          </Grid.Column>
+          <Grid.Column width={2}>
+            <div style={{}}>
+              <CrnaPerson />
+            </div>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -90,12 +122,12 @@ const features = () => (
       <div className="container-body">
         <Grid columns={2} relaxed stackable>
           <Grid.Row>
-            <Grid.Column width={6}>
+            <Grid.Column width={4}>
               <FeaturesPhone />
             </Grid.Column>
             <Grid.Column width={10}>
               <h1> CONTENT YOU CAN PUT INTO PRACTICE </h1>
-              <p style={{ fontSize: "22px" }}>
+              <p>
                 {" "}
                 As soon as you begin answering questions, SelfStudyPLUS begins
                 assessing your strengths and any gaps in your knowledge, and
@@ -103,12 +135,12 @@ const features = () => (
                 specific knowledge.
               </p>
               <ul>
-                <li style={{ fontSize: "18px" }}>
+                <li>
                   {" "}
                   innovative and patented technology assessing and personalizing
                   content with every question you answer{" "}
                 </li>
-                <li style={{ fontSize: "18px" }}>
+                <li>
                   up to date content, relevant today, with over 1900 questions;
                   written by teaching practitioners at top universities
                   throughout North America

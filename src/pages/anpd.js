@@ -7,12 +7,13 @@ import PeopleBanner from "../components/images/PeopleBanner";
 import Info from "../components/Info.js";
 import { Grid, Button } from "semantic-ui-react";
 import Brain from "../components/images/Brain";
+import Vimeo from "@u-wave/react-vimeo";
 const anpd = () => (
   <Layout>
     <SEO title="Program Directors" />
-    <div style={{ paddingTop: "30vh" }} />
+
     <div className="container-body">
-      <h2 className="title-color" style={{ fontSize: "50px" }}>
+      <h2 className="title-color" style={{ fontSize: "2.5em" }}>
         KNOW WHERE YOUR STUDENTS STAND EVERY DAY
       </h2>
       <p>
@@ -26,10 +27,13 @@ const anpd = () => (
         <h1 className="title-color " style={{ fontSize: "50px" }}>
           Take a quick tour of SelfStudyPLUS
         </h1>
-        <h1> VIDEO </h1>
-        `vimeo: https://vimeo.com/5299404`
+
+        <Vimeo video="210490351" showTitle="false" className="video" />
         <p>Introducing SelfStudyPLUS for Nurse Anesthesia</p>
-        <h1> VIDEO </h1>
+        <br />
+        <br />
+        <br />
+        <Vimeo video="210765584" showTitle="false" className="video" />
         <p>
           Progress reporting, Practice tests and Games in SelfStudyPLUS for
           Nurse Anesthesia
@@ -39,8 +43,14 @@ const anpd = () => (
       <br />
       <p>
         {" "}
-        Click <a href="https://na-admin.selfstudy.plus/login">here</a> to view
-        our Program Directors Dashboard demo, using{" "}
+        Click{" "}
+        <a
+          href="https://na-admin.selfstudy.plus/login"
+          style={{ fontSize: "1.2em" }}
+        >
+          here
+        </a>{" "}
+        to view our Program Directors Dashboard demo, using{" "}
         <strong>testpd@selfstudy.plus</strong> as your login, and{" "}
         <strong>"password"</strong> as the password. This demo consists of
         multiple pages, which can be accessed by clicking on each of the
@@ -48,7 +58,7 @@ const anpd = () => (
       </p>
       <br />
       <br />
-      <PeopleBanner />
+      <PeopleBanner style={{ marginBottom: "0" }} />
     </div>
     <div className="container-bottom centered">
       {" "}

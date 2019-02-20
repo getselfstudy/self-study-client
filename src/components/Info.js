@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Grid } from "semantic-ui-react";
-import SelfStudy from "../components/images/SelfStudy";
-import Phone1 from "../components/images/Phone1";
-import Phone2 from "../components/images/Phone2";
-export class Info extends Component {
+import SelfStudy from "./images/SelfStudy";
+import Phone1 from "./images/Phone1";
+import Phone2 from "./images/Phone2";
+export class info extends Component {
   render() {
     return (
       <div>
@@ -51,7 +51,7 @@ export class Info extends Component {
                   </p>
                 </div>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column width={4}>
                 <Phone1 />
                 <Phone2 />
               </Grid.Column>
@@ -59,27 +59,33 @@ export class Info extends Component {
                 <h1 className="title-color">
                   THE SCIENCE BEHIND SELFSTUDYPLUS:
                 </h1>
-                <h2 className="title-color">
+                <h2 className="title-color ">
                   Individualized, Adaptive Learning
                 </h2>
-                <p className="sub-orange">Personalized learning</p>
-                <p className="no-margin">
+                <p className="sub-orange no-margin-bottom info-text">
+                  Personalized learning
+                </p>
+                <p className="no-margin info-text">
                   SelfStudyPLUS employs adaptive learning methodology to
                   dynamically analyze your students strengths and weaknesses,
                   providing them with a personalized learning path. This leads
                   to improved performance and increased learning efficiency.
                 </p>
 
-                <p className="sub-orange">Spaced repetition</p>
-                <p className="no-margin">
+                <p className="sub-orange no-margin-bottom info-text">
+                  Spaced repetition
+                </p>
+                <p className="no-margin info-text">
                   Using a technique called spaced repetition, SelfStudyPLUS
                   automatically calculates how long it takes for you to forget
                   something they’ve learned and repeats important concepts as
                   needed. Repetitive storage and retrieval of information across
                   neural networks over time improves long-term retention.
                 </p>
-                <p className="sub-orange">Test-enhanced learning</p>
-                <p className="no-margin">
+                <p className="sub-orange no-margin-bottom info-text">
+                  Test-enhanced learning
+                </p>
+                <p className="no-margin info-text">
                   Scientific evidence suggests that testing is an important
                   component of learning. Tests can enhance and alert memory,
                   improving recall and promoting long-term retention. Emerging
@@ -87,8 +93,10 @@ export class Info extends Component {
                   may be a very important component of learning. Tests,
                   especially pretests, can enhance and alert memory.
                 </p>
-                <p className="sub-orange">Interleaving</p>
-                <p className="no-margin">
+                <p className="sub-orange no-margin-bottom info-text">
+                  Interleaving
+                </p>
+                <p className="no-margin info-text">
                   SelfStudyPLUS presents information to you using an
                   interleaving approach to learning, a technique now recognized
                   as more effective than block learning for long-term retention.{" "}
@@ -102,4 +110,4 @@ export class Info extends Component {
   }
 }
 
-export default Info;
+export default info;

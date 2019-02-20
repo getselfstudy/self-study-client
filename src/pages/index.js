@@ -6,6 +6,8 @@ import Image from "../components/image";
 import SEO from "../components/seo";
 import { Button, Grid, Row, Column, Icon } from "semantic-ui-react";
 
+import LogoBig from "../components/images/LogoBig";
+
 import BannerImage from "../components/images/BannerImage";
 import Tablet from "../components/Tablet";
 import FastImage from "../components/images/FastImage";
@@ -15,16 +17,16 @@ import ForYouImage from "../components/images/ForYouImage";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div style={{ paddingTop: "15vh" }} />
     <div className="image-wrapper-header space-below">
-      <BannerImage />
+      <div className="banner-image">
+        <BannerImage />
+      </div>
       <div className="image-text-header">
         <h1>On Your Time. Anytime.</h1>
         <h3> Personalized learning that fits your busy schedule </h3>
       </div>
       <br />
       <div className="container-body">
-        {" "}
         <Grid relaxed stackable>
           <Grid.Row columns={2}>
             <Grid.Column>
@@ -78,14 +80,24 @@ const IndexPage = () => (
           <Grid.Row>
             <Grid.Column>
               <div className="centered">
-                <Icon
+                {/* <Icon
                   name="clock outline"
-                  size="massive"
+                  size="huge"
                   circular
                   color="blue"
                   inverted
-                  style={{}}
                 />
+              */}
+              </div>
+              <div
+                style={{
+                  width: "60%",
+                  textAlign: "center",
+                  alignItems: "center",
+                  margin: "0 auto"
+                }}
+              >
+                <FastImage />
               </div>
 
               <h1 className="centered title-color">FAST </h1>
@@ -104,16 +116,26 @@ const IndexPage = () => (
             </Grid.Column>
             <Grid.Column>
               <div className="centered">
-                <Icon
+                {/* <Icon
                   name="lightbulb outline"
-                  size="massive"
+                  size="huge"
                   circular
                   color="blue"
                   inverted
                   style={{}}
-                />
+                /> */}
+                <div
+                  style={{
+                    width: "60%",
+                    textAlign: "center",
+                    alignItems: "center",
+                    margin: "0 auto"
+                  }}
+                >
+                  <FlexibleImage />
+                </div>
               </div>
-              {/* <FlexibleImage /> */}
+
               <h1 className="centered title-color">FLEXIBLE </h1>
               <ul>
                 <li>
@@ -132,16 +154,26 @@ const IndexPage = () => (
             </Grid.Column>
             <Grid.Column>
               <div className="centered">
-                <Icon
+                {/* <Icon
                   name="child"
-                  size="massive"
+                  size="huge"
                   circular
                   color="blue"
                   inverted
                   style={{}}
-                />
+                /> */}
               </div>
-              {/* <ForYouImage /> */}
+              <div
+                style={{
+                  width: "60%",
+                  textAlign: "center",
+                  alignItems: "center",
+                  margin: "0 auto"
+                }}
+              >
+                <ForYouImage />
+              </div>
+
               <h1 className="centered title-color">FOR YOU </h1>
               <ul>
                 <li>Enjoy learning with games and timed challenges </li>
@@ -166,23 +198,34 @@ const IndexPage = () => (
       <div className="container-bottom">
         <div className="container-body">
           <div className="centered">
-            <h3>
+            <h2>
               {" "}
               Our over 1900 questions in SelfStudyPLUS for Nurse Anesthesia are
               written by practitioners at top hospitals and universities, then
               carefully curated and edited by:
-            </h3>
+            </h2>
           </div>
-          <hr style={{ color: "red" }} />
-          <div className="centered">
-            <h1> Our Experts </h1>
+          <br />
+          <hr className="hr-blue" />
+          <div>
+            <h1 className="centered " style={{ fontSize: "3em" }}>
+              {" "}
+              Our Experts{" "}
+            </h1>
+            <br />
+            <br />
             <Grid relaxed stackable columns={3}>
               <Grid.Row>
                 <Grid.Column>
                   <h1>
-                    <strong>Dr. Franklin McShane DNP, CRNA, APNP</strong>{" "}
+                    <strong>
+                      Dr. Franklin McShane <br />
+                      DNP, CRNA, APNP
+                    </strong>{" "}
+                    <br />
                     Program Director{" "}
                   </h1>
+                  <br />
                   <p>
                     {" "}
                     Rosalind Franklin University of Medicine and Science
@@ -191,9 +234,13 @@ const IndexPage = () => (
                 </Grid.Column>
                 <Grid.Column>
                   <h1>
-                    <strong>Peter J. Kallio DNP, CRNA, APNP</strong> Associate
-                    Program Director{" "}
+                    <strong>
+                      Peter J. Kallio <br />
+                      DNP, CRNA, APNP
+                    </strong>
+                    <br /> Associate Program Director{" "}
                   </h1>
+                  <br />
                   <p>
                     {" "}
                     Rosalind Franklin University of Medicine and Science
@@ -202,8 +249,16 @@ const IndexPage = () => (
                 </Grid.Column>
                 <Grid.Column>
                   <h1>
-                    <strong>Edward Zhovtis MS </strong>Adjunct Faculty{" "}
+                    <strong>
+                      Edward Zhovtis <br /> MS{" "}
+                    </strong>{" "}
+                    <br />
+                    Adjunct Faculty{" "}
                   </h1>
+                  <br />
+                  <br />
+
+                  <br />
                   <p>
                     Rosalind Franklin University of Medicine and Science
                     Chicago, IL
@@ -214,13 +269,6 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <p>
-        {" "}
-        Click here to view our Program Directors Dashboard demo, using
-        testpd@selfstudy.plus as your login, and "password" as the password.
-        This demo consists of multiple pages, which can be accessed by clicking
-        on each of the individual student names on the first page.
-      </p>
     </div>
   </Layout>
 );

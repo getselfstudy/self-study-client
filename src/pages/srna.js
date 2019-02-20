@@ -6,14 +6,13 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Srna1 from "../components/images/Srna1";
 import Srna2 from "../components/images/Srna2";
-
+import Vimeo from "@u-wave/react-vimeo";
 import { Button } from "semantic-ui-react";
 
 const srna = () => (
   <Layout>
     <SEO title="SRNA" />
-    <div style={{ paddingTop: "20vh" }} />
-    <div className="container-bottom" />
+
     <div className="container-body">
       <h2 className="title-color" style={{ fontSize: "40px" }}>
         ACCELERATE YOUR LEARNING
@@ -24,13 +23,15 @@ const srna = () => (
         interval repetition and test-enhanced learning to help you learn faster
         and remember longer to ensure your success.
       </p>
+      <br />
       <div className="centered">
         <h1 className="title-color centered" style={{ fontSize: "50px" }}>
           Take a quick tour of SelfStudyPlus
         </h1>
-        <h1> VIDEO </h1>
+        <Vimeo video="210490351" showTitle="false" className="video" />
         <p> Introducing SelfStudyPLUS for Nurse Anesthesia</p>
-        <h1> Video </h1>
+        <div style={{ paddingTop: "10vh" }} />
+        <Vimeo video="210765584" showTitle="false" className="video" />
         <p>
           {" "}
           Progress, Practice Tests and Games in SelfStudyPLUS for Nurse
