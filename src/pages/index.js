@@ -6,8 +6,6 @@ import Image from "../components/image";
 import SEO from "../components/seo";
 import { Button, Grid, Row, Column, Icon } from "semantic-ui-react";
 
-import LogoBig from "../components/images/LogoBig";
-
 import BannerImage from "../components/images/BannerImage";
 import Tablet from "../components/Tablet";
 import FastImage from "../components/images/FastImage";
