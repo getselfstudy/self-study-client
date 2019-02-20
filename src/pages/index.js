@@ -214,6 +214,13 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+      <p>
+        {" "}
+        Click here to view our Program Directors Dashboard demo, using
+        testpd@selfstudy.plus as your login, and "password" as the password.
+        This demo consists of multiple pages, which can be accessed by clicking
+        on each of the individual student names on the first page.
+      </p>
     </div>
   </Layout>
 );

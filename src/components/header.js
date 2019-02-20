@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import Logo_Image from "./Logo_Image.js";
-import { Menu } from "semantic-ui-react";
+import { Menu, Grid } from "semantic-ui-react";
 
 export default class Header extends Component {
   state = {};
@@ -31,7 +31,7 @@ export default class Header extends Component {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: " repeat(2, 1fr)",
+              gridTemplateColumns: " 30% 15%",
               gridGap: "20px"
             }}
           >
@@ -43,7 +43,6 @@ export default class Header extends Component {
                   textDecoration: `none`
                 }}
               >
-                {" "}
                 <Logo_Image />
               </Link>
             </div>
