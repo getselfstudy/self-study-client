@@ -61,39 +61,38 @@ export default class Header extends Component {
           </div>
         </div>
         <div className="container-header">
-          <Mobile> </Mobile>
-          <Default>
-            <nav>
-              <Link
-                to="/features"
-                className="items"
-                activeStyle={{ color: "#e75328" }}
-              >
-                Features
-              </Link>
-              <Link
-                className="items"
-                to="/crna"
-                activeStyle={{ color: "#e75328" }}
-              >
-                CRNA
-              </Link>
-              <Link
-                to="/srna"
-                className="items"
-                activeStyle={{ color: "#e75328" }}
-              >
-                SRNA
-              </Link>
-              <Link
-                to="/anpd"
-                className="items"
-                activeStyle={{ color: "#e75328" }}
-              >
-                Program Directors
-              </Link>
-            </nav>
-          </Default>
+          {/* <Default> */}
+          <nav>
+            <Link
+              to="/features"
+              className="items"
+              activeStyle={{ color: "#e75328" }}
+            >
+              Features
+            </Link>
+            <Link
+              className="items"
+              to="/crna"
+              activeStyle={{ color: "#e75328" }}
+            >
+              CRNA
+            </Link>
+            <Link
+              to="/srna"
+              className="items"
+              activeStyle={{ color: "#e75328" }}
+            >
+              SRNA
+            </Link>
+            <Link
+              to="/anpd"
+              className="items"
+              activeStyle={{ color: "#e75328" }}
+            >
+              Program Directors
+            </Link>
+          </nav>
+          {/* </Default> */}
         </div>
         <div className="blue-header-line" />
       </header>
