@@ -57,7 +57,7 @@ export default class Header extends Component {
                     >
                       for Nurse Anesthesia
                     </h3>
-                    <Mobile>
+                    {/* <Mobile>
                       <Dropdown
                         text="File"
                         style={{ zIndex: "1000", float: "right" }}
@@ -81,8 +81,8 @@ export default class Header extends Component {
                           <Dropdown.Item text="Publish To Web" />
                           <Dropdown.Item text="E-mail Collaborators" />
                         </Dropdown.Menu>
-                      </Dropdown>
-                      <FaBars
+                      </Dropdown> */}
+                    {/* <FaBars
                         style={{
                           display: "inline",
                           float: "right",
@@ -90,7 +90,7 @@ export default class Header extends Component {
                           position: "relative"
                         }}
                       />
-                    </Mobile>
+                    </Mobile> */}
                   </div>
                 </Grid.Column>
               </Grid.Row>
@@ -98,38 +98,38 @@ export default class Header extends Component {
           </div>
         </div>
         <div className="container-header">
-          <Default>
-            <nav>
-              <Link
-                to="/features"
-                className="items"
-                activeStyle={{ color: "#e75328" }}
-              >
-                Features
-              </Link>
-              <Link
-                className="items"
-                to="/crna"
-                activeStyle={{ color: "#e75328" }}
-              >
-                CRNA
-              </Link>
-              <Link
-                to="/srna"
-                className="items"
-                activeStyle={{ color: "#e75328" }}
-              >
-                SRNA
-              </Link>
-              <Link
-                to="/anpd"
-                className="items"
-                activeStyle={{ color: "#e75328" }}
-              >
-                Program Directors
-              </Link>
-            </nav>
-          </Default>
+          {/* <Default> */}
+          <nav>
+            <Link
+              to="/features"
+              className="items"
+              activeStyle={{ color: "#e75328" }}
+            >
+              Features
+            </Link>
+            <Link
+              className="items"
+              to="/crna"
+              activeStyle={{ color: "#e75328" }}
+            >
+              CRNA
+            </Link>
+            <Link
+              to="/srna"
+              className="items"
+              activeStyle={{ color: "#e75328" }}
+            >
+              SRNA
+            </Link>
+            <Link
+              to="/anpd"
+              className="items"
+              activeStyle={{ color: "#e75328" }}
+            >
+              Program Directors
+            </Link>
+          </nav>
+          {/* </Default> */}
         </div>
         <div className="blue-header-line" />
       </header>

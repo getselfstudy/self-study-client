@@ -147,21 +147,24 @@ const features = () => (
               <FeaturesPhone />
             </Grid.Column>
             <Grid.Column width={10}>
-              <h1> CONTENT YOU CAN PUT INTO PRACTICE </h1>
-              <p>
+              <h1 style={{ color: "white" }}>
+                {" "}
+                CONTENT YOU CAN PUT INTO PRACTICE{" "}
+              </h1>
+              <p style={{ color: "white" }}>
                 {" "}
                 As soon as you begin answering questions, SelfStudyPLUS begins
                 assessing your strengths and any gaps in your knowledge, and
                 will deliver to you subsequent questions appropriate to your
                 specific knowledge.
               </p>
-              <ul>
-                <li>
+              <ul style={{ color: "white" }}>
+                <li style={{ color: "white" }}>
                   {" "}
                   innovative and patented technology assessing and personalizing
                   content with every question you answer{" "}
                 </li>
-                <li>
+                <li style={{ color: "white" }}>
                   up to date content, relevant today, with over 1900 questions;
                   written by teaching practitioners at top universities
                   throughout North America

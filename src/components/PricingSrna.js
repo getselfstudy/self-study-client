@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Button } from "semantic-ui-react";
 
-export class pricing extends Component {
+export class pricingSrna extends Component {
   render() {
     return (
       <div>
@@ -16,10 +16,35 @@ export class pricing extends Component {
                   <div>
                     <h2>
                       {" "}
+                      3 <br /> Months
+                    </h2>
+                    <h1> $159</h1>
+                    <a href="https://na.selfstudy.plus/purchase/SK00000000S3">
+                      <Button
+                        size="huge"
+                        color="blue"
+                        style={{ margin: "20px 0 20px", color: "white" }}
+                      >
+                        {" "}
+                        Select{" "}
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </Grid.Column>
+              <Grid.Column>
+                {" "}
+                <div className="pricing">
+                  <div className="pricing-header">
+                    <h1>SelfStudyPLUS</h1>
+                  </div>
+                  <div>
+                    <h2>
+                      {" "}
                       6 <br /> Months
                     </h2>
-                    <h1> $249</h1>
-                    <a href="https://na.selfstudy.plus/purchase/SK00000000C6">
+                    <h1> $199</h1>
+                    <a href="https://na.selfstudy.plus/purchase/SK00000000S6">
                       <Button
                         size="huge"
                         color="blue"
@@ -43,36 +68,12 @@ export class pricing extends Component {
                       {" "}
                       12 <br /> Months
                     </h2>
-                    <h1> $299</h1>
-                    <a href="https://na.selfstudy.plus/purchase/SK00000000C6">
+                    <h1> $239</h1>
+                    <a href="https://na.selfstudy.plus/purchase/SK0000000S12">
                       <Button
                         size="huge"
                         color="blue"
                         style={{ margin: "20px 0 20px", color: "white" }}
-                      >
-                        {" "}
-                        Select{" "}
-                      </Button>
-                    </a>
-                  </div>
-                </div>
-              </Grid.Column>
-              <Grid.Column>
-                {" "}
-                <div className="pricing">
-                  <div className="pricing-header-blue">
-                    <h1>SelfStudyPLUS</h1>
-                  </div>
-                  <div className="pricing-header-blue-sub">CE 20 </div>
-                  <div>
-                    <h1 style={{ paddingTop: "20px" }}> $199</h1>
-                    <p> earn up to 20 hours of CE</p>
-                    <a href="https://na.selfstudy.plus/purchase/SK00000000C6">
-                      <Button
-                        size="huge"
-                        color="orange"
-                        style={{ margin: " 0 0 0", color: "white" }}
-                        className="pricing-button"
                       >
                         {" "}
                         Select{" "}
@@ -89,4 +90,4 @@ export class pricing extends Component {
   }
 }
 
-export default pricing;
+export default pricingSrna;

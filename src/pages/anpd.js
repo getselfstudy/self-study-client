@@ -72,8 +72,10 @@ const anpd = () => (
         <Grid relaxed stackable columns={2}>
           <Grid.Row>
             <Grid.Column width={10}>
-              <h1>Learn more about the science behind SelfStudyPLUS</h1>
-              <p>
+              <h1 style={{ color: "white" }}>
+                Learn more about the science behind SelfStudyPLUS
+              </h1>
+              <p style={{ color: "white" }}>
                 {" "}
                 ScientificAmerican.com:
                 <a
@@ -83,7 +85,7 @@ const anpd = () => (
                   The Interleaving Effect: Mixing It Up Boosts Learning
                 </a>{" "}
               </p>
-              <p>
+              <p style={{ color: "white" }}>
                 {" "}
                 The New York Times:
                 <a
@@ -93,7 +95,7 @@ const anpd = () => (
                   Why Flunking Exams Is Actually a Good Thing
                 </a>{" "}
               </p>
-              <p>
+              <p style={{ color: "white" }}>
                 {" "}
                 Anesthesia & Analgesia:
                 <a

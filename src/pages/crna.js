@@ -1,12 +1,16 @@
 import React from "react";
 
 import { Grid } from "semantic-ui-react";
-
+import Responsive from "react-responsive";
 import Info from "../components/Info.js";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Pricing from "../components/Pricing";
 import Vimeo from "@u-wave/react-vimeo";
+import Cpca from "../components/Cpca";
+
+const Mobile = props => <Responsive {...props} maxWidth={767} />;
+const Default = props => <Responsive {...props} minWidth={768} />;
 
 const crna = () => (
   <Layout>
@@ -50,17 +54,18 @@ const crna = () => (
     <div className="centered">
       <h1
         className="title-color"
-        style={{ fontSize: "4em", paddingTop: "5vh" }}
+        style={{ fontSize: "3.5em", paddingTop: "5vh" }}
       >
         Start Your Membership
       </h1>
-      <p style={{ fontSize: "2em" }}>
+      <p style={{ fontSize: "1.5em", color: "#605E5E" }}>
         Begin earning 20 Class A CE Credits today <br />
         --including 5 pharmacology credits! <br /> Or enjoy unlimited usage
         without CE <br /> in 6- and 12-month membership options. <br /> Over
         1700 questions, tagged to the NBCRNA Core Modules outline!
       </p>
       <Pricing />
+      <Cpca />
     </div>
   </Layout>
 );

@@ -6,7 +6,7 @@ import SEO from "../components/seo";
 import Srna1 from "../components/images/Srna1";
 import Srna2 from "../components/images/Srna2";
 import Vimeo from "@u-wave/react-vimeo";
-
+import PricingSrna from "../components/PricingSrna";
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
 
@@ -88,6 +88,10 @@ const srna = () => (
           <br /> for 3 months, 6 months, or 12 months!
         </p>
       </div>
+    </div>
+    <div className="centered">
+      {" "}
+      <PricingSrna />
     </div>
   </Layout>
 );

@@ -34,14 +34,14 @@ const Layout = ({ children }) => (
         <footer>
           <div className="container-bottom">
             <div className="container-body centered">
-              <p style={{ fontSize: "14px" }}>
+              <p style={{ fontSize: "14px", color: "white" }}>
                 {" "}
                 OpenAnesthesia™ content is intended for educational purposes
                 only and not intended as medical advice. Reuse of
                 OpenAnesthesia™ content for commercial purposes of any kind is
                 prohibited.
               </p>{" "}
-              <p style={{ fontSize: "14px" }}>
+              <p style={{ fontSize: "14px", color: "white" }}>
                 {" "}
                 Copyright © {new Date().getFullYear()}{" "}
               </p>

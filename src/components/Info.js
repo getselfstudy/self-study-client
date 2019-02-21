@@ -3,6 +3,10 @@ import { Grid } from "semantic-ui-react";
 import SelfStudy from "./images/SelfStudy";
 import Phone1 from "./images/Phone1";
 import Phone2 from "./images/Phone2";
+import Responsive from "react-responsive";
+const Mobile = props => <Responsive {...props} maxWidth={767} />;
+const Default = props => <Responsive {...props} minWidth={768} />;
+
 export class info extends Component {
   render() {
     return (
@@ -52,8 +56,16 @@ export class info extends Component {
                 </div>
               </Grid.Column>
               <Grid.Column width={4}>
-                <Phone1 />
-                <Phone2 />
+                <Default>
+                  <Phone1 />
+                  <Phone2 />
+                </Default>
+                <Mobile>
+                  <div style={{ margin: "0 auto", maxWidth: "70%" }}>
+                    <Phone1 />
+                    <Phone2 />
+                  </div>
+                </Mobile>
               </Grid.Column>
               <Grid.Column>
                 <h1 className="title-color">

@@ -4,6 +4,7 @@
 
 * {
   font-size: 1.2rem;
+  color: #605e5e;
 }
 
 html {
@@ -83,6 +84,20 @@ li {
 
 .container-body {
   margin: 30px 23vw 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container-body {
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container-body {
+    margin-right: 10vw;
+    margin-left: 10vw;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -181,3 +196,83 @@ header {
 }
 
 /* pricing tables */
+.pricing {
+  background-color: #f4f3f1;
+  padding: 0px 0px 10px;
+  min-height: 450px;
+  color: #605e5e;
+  z-index: 1;
+  min-width: 100px;
+  text-align: middle !important;
+}
+
+.pricing-header {
+  background-color: #e84e0e !important;
+  padding: 40px;
+  top: 0;
+  position: relative;
+  z-index: 5;
+  color: white;
+}
+
+.pricing h2 {
+  font-size: 1.8em;
+  padding-top: 30px;
+}
+
+.pricing p {
+  padding-top: 20px;
+}
+
+.pricing-header-blue {
+  background-color: #08457d !important;
+  padding: 40px;
+  top: 0;
+  position: relative;
+  z-index: 5;
+  color: white;
+}
+
+.pricing-header-blue-sub {
+  background-color: #2b6ca3 !important;
+  padding: 20px;
+
+  position: relative;
+  z-index: 5;
+  color: white;
+}
+
+.pricing a {
+  vertical-align: bottom;
+  bottom: 0;
+}
+
+.pricing-button {
+  vertical-align: bottom;
+  bottom: 0;
+}
+
+.cpca {
+  border: 1px solid #e84e0e;
+  padding: 10px 10px 10px;
+  background-color: #f4f3f1;
+  margin: 10px;
+}
+
+.cpca h1 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.cpca h2 {
+  color: #605e5e;
+}
+
+.cpca h3 {
+  font-size: 1.4em;
+}
+
+.cpca-sub {
+  background-color: #e84e0e;
+  padding: 0 10px 35px;
+}
