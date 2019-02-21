@@ -24,13 +24,7 @@ class IndexPage extends React.Component {
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
         <Default>
-          <BannerImage />
-          <div className="hero-container">
-            {/* <div className="centered">
-            <h1>On Your Time. Anytime.</h1>
-            <h3> Personalized learning that fits your busy schedule </h3>
-          </div> */}
-          </div>
+          <BannerImage style={{ overflow: "hidden" }} />
         </Default>
         <Mobile>
           <BannerImageSmall />

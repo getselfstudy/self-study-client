@@ -4,14 +4,9 @@ import React, { Component } from "react";
 import Responsive from "react-responsive";
 import { Grid, Dropdown, Menu } from "semantic-ui-react";
 import LogoBig from "./images/LogoBig.js";
+
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
-
-const options = [
-  { key: 1, text: "Choice 1", value: 1 },
-  { key: 2, text: "Choice 2", value: 2 },
-  { key: 3, text: "Choice 3", value: 3 }
-];
 
 export default class Header extends Component {
   render() {
