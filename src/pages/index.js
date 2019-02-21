@@ -31,7 +31,6 @@ class IndexPage extends React.Component {
             <h3> Personalized learning that fits your busy schedule </h3>
           </div> */}
           </div>
-          <div className="test" />
         </Default>
         <Mobile>
           <BannerImageSmall />
