@@ -80,7 +80,7 @@ class IndexPage extends React.Component {
             {" "}
             <div className="container-body">
               {" "}
-              <h2>
+              <h2 style={{ color: "white" }}>
                 SelfStudyPLUS IS A BREAKTHROUGH ADAPTIVE LEARNING SYSTEM FOR
                 NURSE ANESTHETISTS
               </h2>
@@ -216,7 +216,7 @@ class IndexPage extends React.Component {
           <div className="container-bottom">
             <div className="container-body">
               <div className="centered">
-                <h2>
+                <h2 style={{ color: "white" }}>
                   {" "}
                   Our over 1900 questions in SelfStudyPLUS for Nurse Anesthesia
                   are written by practitioners at top hospitals and
@@ -226,7 +226,10 @@ class IndexPage extends React.Component {
               <br />
               <hr className="hr-blue" />
               <div>
-                <h1 className="centered " style={{ fontSize: "3em" }}>
+                <h1
+                  className="centered "
+                  style={{ fontSize: "3em", color: "white" }}
+                >
                   {" "}
                   Our Experts{" "}
                 </h1>
@@ -235,8 +238,8 @@ class IndexPage extends React.Component {
                 <Grid relaxed stackable columns={3}>
                   <Grid.Row>
                     <Grid.Column>
-                      <h1>
-                        <strong>
+                      <h1 style={{ color: "white" }}>
+                        <strong style={{ color: "white" }}>
                           Dr. Franklin McShane <br />
                           DNP, CRNA, APNP
                         </strong>{" "}
@@ -244,30 +247,30 @@ class IndexPage extends React.Component {
                         Program Director{" "}
                       </h1>
                       <br />
-                      <p>
+                      <p style={{ color: "white" }}>
                         {" "}
                         Rosalind Franklin University of Medicine and Science
                         Chicago, IL{" "}
                       </p>
                     </Grid.Column>
                     <Grid.Column>
-                      <h1>
-                        <strong>
+                      <h1 style={{ color: "white" }}>
+                        <strong style={{ color: "white" }}>
                           Peter J. Kallio <br />
                           DNP, CRNA, APNP
                         </strong>
                         <br /> Associate Program Director{" "}
                       </h1>
                       <br />
-                      <p>
+                      <p style={{ color: "white" }}>
                         {" "}
                         Rosalind Franklin University of Medicine and Science
                         Chicago, IL
                       </p>
                     </Grid.Column>
                     <Grid.Column>
-                      <h1>
-                        <strong>
+                      <h1 style={{ color: "white" }}>
+                        <strong style={{ color: "white" }}>
                           Edward Zhovtis <br /> MS{" "}
                         </strong>{" "}
                         <br />
@@ -277,7 +280,7 @@ class IndexPage extends React.Component {
                       <br />
 
                       <br />
-                      <p>
+                      <p style={{ color: "white" }}>
                         Rosalind Franklin University of Medicine and Science
                         Chicago, IL
                       </p>
