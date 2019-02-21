@@ -9,8 +9,8 @@ import { Button, Grid } from "semantic-ui-react";
 import BannerImage from "../components/images/BannerImage";
 import Tablet from "../components/Tablet";
 // import FastImage from "../components/images/FastImage";
-import FlexibleImage from "../components/images/FlexibleImage";
-import ForYouImage from "../components/images/ForYouImage";
+// import FlexibleImage from "../components/images/FlexibleImage";
+// import ForYouImage from "../components/images/ForYouImage";
 
 const IndexPage = () => (
   <Layout>
@@ -130,7 +130,7 @@ const IndexPage = () => (
                     margin: "0 auto"
                   }}
                 >
-                  <FlexibleImage />
+                  {/* <FlexibleImage /> */}
                 </div>
               </div>
 
@@ -169,7 +169,7 @@ const IndexPage = () => (
                   margin: "0 auto"
                 }}
               >
-                <ForYouImage />
+                {/* <ForYouImage /> */}
               </div>
 
               <h1 className="centered title-color">FOR YOU </h1>
