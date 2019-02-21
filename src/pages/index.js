@@ -25,7 +25,6 @@ class IndexPage extends React.Component {
         <Default>
           <div className="image-wrapper-header space-below">
             <BannerImage />
-
             <div className="image-text-header ">
               <h1>On Your Time. Anytime.</h1>
               <h3> Personalized learning that fits your busy schedule </h3>

@@ -58,14 +58,6 @@ export default class Header extends Component {
           </div>
         </div>
         <div className="container-header">
-          {/* <nav>
-            <ul>
-              <li> Features </li>
-              <li> CRNA</li>
-              <li> SRNA</li>
-              <li> Program Directors</li>
-            </ul>
-          </nav> */}{" "}
           <nav>
             <Link
               to="/features"
