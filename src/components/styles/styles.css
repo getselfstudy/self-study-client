@@ -72,24 +72,6 @@ li {
   text-align: center;
 }
 
-.image-wrapper-header {
-  position: relative;
-  top: 0;
-}
-
-.image-text-header {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-
-  z-index: 999;
-  text-align: center;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  /* color: white; */
-}
-
 .space-below {
   margin-bottom: 2vh;
 }

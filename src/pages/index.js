@@ -22,15 +22,15 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <Default>
-          <div className="image-wrapper-header space-below">
-            <BannerImage />
-            <div className="image-text-header ">
-              <h1>On Your Time. Anytime.</h1>
-              <h3> Personalized learning that fits your busy schedule </h3>
-            </div>
+        {/* <Default> */}
+        <div className="">
+          <BannerImage />
+          <div className="centered">
+            <h1>On Your Time. Anytime.</h1>
+            <h3> Personalized learning that fits your busy schedule </h3>
           </div>
-        </Default>
+        </div>
+        {/* </Default> */}
         <div>
           <br />
           <div className="container-body">
