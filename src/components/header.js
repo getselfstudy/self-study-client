@@ -1,11 +1,17 @@
 import { Link } from "gatsby";
-
+import { FaBars } from "react-icons/fa";
 import React, { Component } from "react";
 import Responsive from "react-responsive";
-import { Grid } from "semantic-ui-react";
+import { Grid, Dropdown, Menu } from "semantic-ui-react";
 import LogoBig from "./images/LogoBig.js";
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
+
+const options = [
+  { key: 1, text: "Choice 1", value: 1 },
+  { key: 2, text: "Choice 2", value: 2 },
+  { key: 3, text: "Choice 3", value: 3 }
+];
 
 export default class Header extends Component {
   render() {
@@ -49,11 +55,47 @@ export default class Header extends Component {
                         textAlign: "center",
                         paddingLeft: "20px",
                         verticalAlign: "middle",
-                        paddingTop: "20px"
+                        paddingTop: "20px",
+                        display: "inline",
+                        paddingRight: "0"
                       }}
                     >
                       for Nurse Anesthesia
                     </h3>
+                    <Mobile>
+                      <Dropdown
+                        text="File"
+                        style={{ zIndex: "1000", float: "right" }}
+                      >
+                        <Dropdown.Menu>
+                          <Dropdown.Item text="New" />
+                          <Dropdown.Item
+                            text="Open..."
+                            description="ctrl + o"
+                          />
+                          <Dropdown.Item
+                            text="Save as..."
+                            description="ctrl + s"
+                          />
+                          <Dropdown.Item text="Rename" description="ctrl + r" />
+                          <Dropdown.Item text="Make a copy" />
+                          <Dropdown.Item icon="folder" text="Move to folder" />
+                          <Dropdown.Item icon="trash" text="Move to trash" />
+                          <Dropdown.Divider />
+                          <Dropdown.Item text="Download As..." />
+                          <Dropdown.Item text="Publish To Web" />
+                          <Dropdown.Item text="E-mail Collaborators" />
+                        </Dropdown.Menu>
+                      </Dropdown>
+                      <FaBars
+                        style={{
+                          display: "inline",
+                          float: "right",
+                          paddingLeft: 0,
+                          position: "relative"
+                        }}
+                      />
+                    </Mobile>
                   </div>
                 </Grid.Column>
               </Grid.Row>
@@ -61,38 +103,38 @@ export default class Header extends Component {
           </div>
         </div>
         <div className="container-header">
-          {/* <Default> */}
-          <nav>
-            <Link
-              to="/features"
-              className="items"
-              activeStyle={{ color: "#e75328" }}
-            >
-              Features
-            </Link>
-            <Link
-              className="items"
-              to="/crna"
-              activeStyle={{ color: "#e75328" }}
-            >
-              CRNA
-            </Link>
-            <Link
-              to="/srna"
-              className="items"
-              activeStyle={{ color: "#e75328" }}
-            >
-              SRNA
-            </Link>
-            <Link
-              to="/anpd"
-              className="items"
-              activeStyle={{ color: "#e75328" }}
-            >
-              Program Directors
-            </Link>
-          </nav>
-          {/* </Default> */}
+          <Default>
+            <nav>
+              <Link
+                to="/features"
+                className="items"
+                activeStyle={{ color: "#e75328" }}
+              >
+                Features
+              </Link>
+              <Link
+                className="items"
+                to="/crna"
+                activeStyle={{ color: "#e75328" }}
+              >
+                CRNA
+              </Link>
+              <Link
+                to="/srna"
+                className="items"
+                activeStyle={{ color: "#e75328" }}
+              >
+                SRNA
+              </Link>
+              <Link
+                to="/anpd"
+                className="items"
+                activeStyle={{ color: "#e75328" }}
+              >
+                Program Directors
+              </Link>
+            </nav>
+          </Default>
         </div>
         <div className="blue-header-line" />
       </header>

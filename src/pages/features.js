@@ -5,7 +5,7 @@ import { Grid, Button } from "semantic-ui-react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
+import Responsive from "react-responsive";
 //This handles the videos from vimeo. Don't remove unless a remplacement is installed.
 import Vimeo from "@u-wave/react-vimeo";
 
@@ -17,11 +17,23 @@ import FeaturesPhone from "../components/images/FeaturesPhone";
 import SrnaPerson from "../components/images/SrnaPerson.js";
 import CrnaPerson from "../components/images/CrnaPerson.js";
 
+const Mobile = props => <Responsive {...props} maxWidth={767} />;
+const Default = props => <Responsive {...props} minWidth={768} />;
+
 const features = () => (
   <Layout>
     <SEO title="Features" />
 
-    <div className="container-body" style={{ paddingTop: "5vh" }}>
+    <div
+      className="container-bottom centered"
+      style={{ marginTop: 0, paddingTop: "0" }}
+    >
+      {" "}
+      <h1>
+        Over 1900 questions from teaching practitioners at top universities!
+      </h1>{" "}
+    </div>
+    <div className="container-body">
       <Grid columns={2} stackable relaxed>
         <Grid.Row>
           <Grid.Column>
@@ -49,12 +61,7 @@ const features = () => (
         </Grid.Row>
       </Grid>
     </div>
-    <div className="container-bottom centered">
-      <h1>
-        {" "}
-        Over 1900 questions from teaching practitioners at top universities!{" "}
-      </h1>
-    </div>
+
     <div className="container-body centered">
       <h1 className="centered title-color">
         {" "}
@@ -92,7 +99,14 @@ const features = () => (
             </p>
           </Grid.Column>
           <Grid.Column width={2}>
-            <SrnaPerson />
+            <Default>
+              <SrnaPerson />
+            </Default>
+            <Mobile>
+              <div style={{ width: "60%", margin: "0 auto" }}>
+                <SrnaPerson />
+              </div>{" "}
+            </Mobile>
           </Grid.Column>
           <Grid.Column width={6}>
             <h1 style={{ color: "#05467E", fontSize: "2.5em" }}>
@@ -112,7 +126,14 @@ const features = () => (
           </Grid.Column>
           <Grid.Column width={2}>
             <div style={{}}>
-              <CrnaPerson />
+              <Default>
+                <CrnaPerson />
+              </Default>
+              <Mobile>
+                <div style={{ width: "60%", margin: "0 auto" }}>
+                  <CrnaPerson />
+                </div>{" "}
+              </Mobile>
             </div>
           </Grid.Column>
         </Grid.Row>

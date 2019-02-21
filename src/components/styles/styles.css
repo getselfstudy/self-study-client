@@ -139,6 +139,9 @@ nav .items:hover {
 }
 
 .video {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 0 10px;
 }
 
 /* This makes the video size responsive instead of a set pixel size */
@@ -170,4 +173,9 @@ header {
   header {
     position: static;
   }
+}
+
+.small-padding {
+  margin: 10px;
+  padding: 10px;
 }

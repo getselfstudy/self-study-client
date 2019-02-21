@@ -1,5 +1,5 @@
 import React from "react";
-
+import Responsive from "react-responsive";
 import { Grid } from "semantic-ui-react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -7,14 +7,16 @@ import Srna1 from "../components/images/Srna1";
 import Srna2 from "../components/images/Srna2";
 import Vimeo from "@u-wave/react-vimeo";
 
+const Mobile = props => <Responsive {...props} maxWidth={767} />;
+const Default = props => <Responsive {...props} minWidth={768} />;
+
 const srna = () => (
   <Layout>
     <SEO title="SRNA" />
 
     <div className="container-body">
-      <h2 className="title-color" style={{ fontSize: "40px" }}>
-        ACCELERATE YOUR LEARNING
-      </h2>
+      <h1 className="title-color">ACCELERATE YOUR LEARNING</h1>
+      <br />
       <p>
         {" "}
         SelfStudyPLUS for Nurse Anesthesia combines personalized learning,
@@ -23,12 +25,12 @@ const srna = () => (
       </p>
       <br />
       <div className="centered">
-        <h1 className="title-color centered" style={{ fontSize: "50px" }}>
+        <h1 className="title-color centered" style={{ fontSize: "2.2em" }}>
           Take a quick tour of SelfStudyPlus
         </h1>
         <Vimeo video="210490351" showTitle="false" className="video" />
         <p> Introducing SelfStudyPLUS for Nurse Anesthesia</p>
-        <div style={{ paddingTop: "10vh" }} />
+        <div style={{}} />
         <Vimeo video="210765584" showTitle="false" className="video" />
         <p>
           {" "}
@@ -37,12 +39,8 @@ const srna = () => (
         </p>
       </div>
     </div>
-    <div
-      className="container-bottom centered extra-margin"
-      style={{ fontSize: "50px" }}
-    >
-      {" "}
-      SelfStudyPLUS PERSONALIZES YOUR LEARNING PATH
+    <div className="container-bottom centered extra-margin" style={{}}>
+      <h1>SelfStudyPLUS PERSONALIZES YOUR LEARNING PATH</h1>
     </div>
     <div className="container-body">
       <Grid columns={3} relaxed stackable>
@@ -68,7 +66,9 @@ const srna = () => (
           </ul>
         </Grid.Column>
         <Grid.Column width={4}>
-          <Srna1 />
+          <Default>
+            <Srna1 />
+          </Default>
         </Grid.Column>
         <Grid.Column width={4}>
           <Srna2 />
@@ -78,11 +78,11 @@ const srna = () => (
         {" "}
         <h1
           className="title-color"
-          style={{ fontSize: "80px", paddingTop: "5vh" }}
+          style={{ fontSize: "3em", paddingTop: "5vh" }}
         >
           Start Your Membership
         </h1>
-        <p style={{ fontSize: "40px" }}>
+        <p style={{ fontSize: "2em" }}>
           {" "}
           Enjoy unlimited use of SelfStudyPLUS <br /> for Nurse Anesthesia{" "}
           <br /> for 3 months, 6 months, or 12 months!

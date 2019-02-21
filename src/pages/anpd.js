@@ -12,7 +12,7 @@ const anpd = () => (
     <SEO title="Program Directors" />
 
     <div className="container-body">
-      <h2 className="title-color" style={{ fontSize: "2.5em" }}>
+      <h2 className="title-color centered" style={{ fontSize: "2.2em" }}>
         KNOW WHERE YOUR STUDENTS STAND EVERY DAY
       </h2>
       <p>
@@ -23,7 +23,7 @@ const anpd = () => (
         possible.
       </p>
       <div className="centered">
-        <h1 className="title-color " style={{ fontSize: "50px" }}>
+        <h1 className="title-color " style={{ fontSize: "2.2em" }}>
           Take a quick tour of SelfStudyPLUS
         </h1>
 
