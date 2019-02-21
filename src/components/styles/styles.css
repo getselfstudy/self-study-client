@@ -179,3 +179,13 @@ nav .items:hover {
 .test {
   background: url("https://www.google.com/search?q=mountains&rlz=1C1CHBF_enUS796US796&tbm=isch&source=iu&ictx=1&fir=V8KzvYV6KU5JSM%253A%252CoiQv_zLtLLGShM%252C%252Fm%252F09d_r&usg=AI4_-kR6yVwRLzH_hx_8W_5qcPaxMHqeAw&sa=X&ved=2ahUKEwjwsuKC88vgAhWyg-AKHaL_C2YQ9QEwAHoECAUQBg#imgrc=V8KzvYV6KU5JSM");
 }
+
+header {
+  position: sticky;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    position: static;
+  }
+}

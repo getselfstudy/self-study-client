@@ -15,7 +15,7 @@ export default class Header extends Component {
           top: "0",
           overflow: "hidden",
           background: `#ffffff`,
-          position: "sticky",
+
           width: "100%",
           zIndex: "900"
         }}
@@ -61,6 +61,7 @@ export default class Header extends Component {
           </div>
         </div>
         <div className="container-header">
+          <Mobile> </Mobile>
           <Default>
             <nav>
               <Link
