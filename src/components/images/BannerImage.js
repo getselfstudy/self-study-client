@@ -30,3 +30,23 @@ const BannerImage = () => (
   />
 );
 export default BannerImage;
+
+// const BannerImage = () => (
+//   <StaticQuery
+//     query={graphql`
+//       query {
+//         placeholderImage: file(relativePath: { eq: "banner.PNG" }) {
+//           childImageSharp {
+//             # Specify the image processing specifications right in the query.
+//             # Makes it trivial to update as your page's design changes.
+//             fixed(width: 2000, height: 600) {
+//               ...GatsbyImageSharpFixed
+//             }
+//           }
+//         }
+//       }
+//     `}
+//     render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} />}
+//   />
+// );
+// export default BannerImage;
