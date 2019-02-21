@@ -8,7 +8,7 @@ import { Button, Grid } from "semantic-ui-react";
 
 import BannerImage from "../components/images/BannerImage";
 import Tablet from "../components/Tablet";
-// import FastImage from "../components/images/FastImage";
+import FastImage from "../components/images/FastImage";
 // import FlexibleImage from "../components/images/FlexibleImage";
 // import ForYouImage from "../components/images/ForYouImage";
 
@@ -95,7 +95,7 @@ const IndexPage = () => (
                   margin: "0 auto"
                 }}
               >
-                {/* <FastImage /> */}
+                <FastImage />
               </div>
 
               <h1 className="centered title-color">FAST </h1>
