@@ -69,9 +69,23 @@ const srna = () => (
           <Default>
             <Srna1 />
           </Default>
+          <Mobile>
+            <div style={{ width: "60%", margin: "0 auto" }}>
+              <Srna1 />
+            </div>
+          </Mobile>
         </Grid.Column>
         <Grid.Column width={4}>
-          <Srna2 />
+          <Default>
+            <Srna2 />
+          </Default>
+          <Mobile>
+            <Mobile>
+              <div style={{ width: "60%", margin: "0 auto" }}>
+                <Srna2 />
+              </div>
+            </Mobile>
+          </Mobile>
         </Grid.Column>
       </Grid>
       <div className="centered">
