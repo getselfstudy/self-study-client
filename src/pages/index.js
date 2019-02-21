@@ -23,12 +23,18 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <Default>
-          <BannerImage style={{ overflow: "hidden" }} />
-        </Default>
-        <Mobile>
-          <BannerImageSmall />
-        </Mobile>
+        <div>
+          <div>
+            <Default>
+              <BannerImage style={{ overflow: "hidden" }} />
+            </Default>
+          </div>
+          <div>
+            <Mobile>
+              <BannerImageSmall />
+            </Mobile>
+          </div>
+        </div>
         <div>
           <br />
           <div className="container-body">
