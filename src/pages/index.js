@@ -7,6 +7,7 @@ import SEO from "../components/seo";
 import { Button, Grid } from "semantic-ui-react";
 import Responsive from "react-responsive";
 import BannerImage from "../components/images/BannerImage";
+import BannerImageSmall from "../components/images/BannerImageSmall";
 import Tablet2 from "../components/Tablet2";
 import FastImage from "../components/images/FastImage";
 import FlexibleImage from "../components/images/FlexibleImage";
@@ -22,15 +23,19 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        {/* <Default> */}
-        <div className="">
+        <Default>
           <BannerImage />
-          <div className="centered">
+          <div className="hero-container">
+            {/* <div className="centered">
             <h1>On Your Time. Anytime.</h1>
             <h3> Personalized learning that fits your busy schedule </h3>
+          </div> */}
           </div>
-        </div>
-        {/* </Default> */}
+          <div className="test" />
+        </Default>
+        <Mobile>
+          <BannerImageSmall />
+        </Mobile>
         <div>
           <br />
           <div className="container-body">
