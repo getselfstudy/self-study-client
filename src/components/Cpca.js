@@ -13,15 +13,15 @@ export class Cpca extends Component {
             <Grid.Row>
               <Grid.Column width={4}>
                 <div className="cpca-sub">
-                  <div style={{ padding: "20px" }}>
+                  <div style={{ padding: "20px", height: "100%" }}>
                     <CpcaPractice />
                   </div>
                 </div>
               </Grid.Column>
               <Grid.Column width={8}>
-                <h2>CPCA Practice Assessment I$30</h2>
-                <h2>CPCA Practice Assessment II $30</h2>
-                <h2>CPCA Practice Assessment I & II $50 </h2>
+                <h3>CPCA Practice Assessment I$30</h3>
+                <h3>CPCA Practice Assessment II $30</h3>
+                <h3>CPCA Practice Assessment I & II $50 </h3>
               </Grid.Column>
               <Grid.Column width={4}>
                 <a href="https://www.nbcrna.com/exams/cpce/practice-exam">
