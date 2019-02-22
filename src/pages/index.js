@@ -6,12 +6,14 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Button, Grid } from "semantic-ui-react";
 import Responsive from "react-responsive";
-import BannerImage from "../components/images/BannerImage";
-import BannerImageSmall from "../components/images/BannerImageSmall";
+
 import Tablet2 from "../components/Tablet2";
 import FastImage from "../components/images/FastImage";
 import FlexibleImage from "../components/images/FlexibleImage";
 import ForYouImage from "../components/images/ForYouImage";
+
+import BannerImage from "../components/images/BannerImage.js";
+import BannerImageSmall from "../components/images/BannerImageSmall.js";
 
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
@@ -28,13 +30,7 @@ class IndexPage extends React.Component {
             </Default>
           </div>
         </div>
-        <div>
-          <div>
-            <Mobile>
-              <BannerImageSmall />
-            </Mobile>
-          </div>
-        </div>
+
         <div>
           <br />
           <div className="container-body">
