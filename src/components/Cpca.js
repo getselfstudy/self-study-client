@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Button } from "semantic-ui-react";
 import CpcaPractice from "./images/CpcaPractice";
-import SelfStudyInverseBlue from "./images/SelfStudyInverseBlue";
-import SelfStudyInverseOrange from "./images/SelfStudyInverseOrange";
+
 export class Cpca extends Component {
   render() {
     return (
@@ -10,17 +9,19 @@ export class Cpca extends Component {
         <br />
         <div />
 
-        <Grid columns={3} relaxed stackable>
+        <Grid columns={1} relaxed stackable>
           <Grid.Row>
             <Grid.Column>
-              {/* <div className="cpca">
-                <h1
-                  className="title-color"
-                  style={{ fontSize: "3em", paddingBottom: "40px" }}
-                >
-                  {" "}
-                  CPCA Practice
-                </h1>
+              <div className="cpca">
+                <div className="cpca-sub">
+                  <h1
+                    className="title-color"
+                    style={{ fontSize: "3em", paddingBottom: "40px" }}
+                  >
+                    {" "}
+                    CPCA Practice
+                  </h1>
+                </div>
                 <hr className="hr-blue" />
                 <h2>CPCA Practice Assessment I</h2> <h3>$30</h3>
                 <h2>CPCA Practice Assessment II</h2>
@@ -37,7 +38,7 @@ export class Cpca extends Component {
                     LEARN MORE{" "}
                   </Button>
                 </a>
-              </div> */}
+              </div>
             </Grid.Column>
           </Grid.Row>
         </Grid>

@@ -22,15 +22,6 @@ const features = () => (
   <Layout>
     <SEO title="Features" />
 
-    <div
-      className="container-bottom centered"
-      style={{ marginTop: 0, paddingTop: "0" }}
-    >
-      {" "}
-      <h1>
-        Over 1900 questions from teaching practitioners at top universities!
-      </h1>{" "}
-    </div>
     <div className="container-body">
       <Grid columns={2} stackable relaxed>
         <Grid.Row>
@@ -58,6 +49,16 @@ const features = () => (
           </Grid.Column>
         </Grid.Row>
       </Grid>
+    </div>
+
+    <div
+      className="container-bottom centered"
+      style={{ marginTop: 0, paddingTop: "20px" }}
+    >
+      {" "}
+      <h1>
+        Over 1900 questions from teaching practitioners at top universities!
+      </h1>{" "}
     </div>
 
     <div className="container-body centered">
