@@ -21,7 +21,18 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <div />
+        <div>
+          <div>
+            <Default>
+              <BannerImage />
+            </Default>
+          </div>
+          <div>
+            <Mobile>
+              <BannerImageSmall />
+            </Mobile>
+          </div>
+        </div>
         <div>
           <br />
           <div className="container-body">
