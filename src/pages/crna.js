@@ -54,7 +54,7 @@ const crna = () => (
     <div className="centered">
       <h1
         className="title-color"
-        style={{ fontSize: "3.5em", paddingTop: "5vh" }}
+        style={{ fontSize: "3em", padding: "5vh 0 5vh" }}
       >
         Start Your Membership
       </h1>

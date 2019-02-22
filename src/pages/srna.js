@@ -29,8 +29,11 @@ const srna = () => (
           Take a quick tour of SelfStudyPlus
         </h1>
         <Vimeo video="210490351" showTitle="false" className="video" />
-        <p> Introducing SelfStudyPLUS for Nurse Anesthesia</p>
-        <div style={{}} />
+        <p style={{ marginTop: "0" }}>
+          {" "}
+          Introducing SelfStudyPLUS for Nurse Anesthesia
+        </p>
+
         <Vimeo video="210765584" showTitle="false" className="video" />
         <p>
           {" "}

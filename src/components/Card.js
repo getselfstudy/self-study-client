@@ -42,16 +42,16 @@ class Card extends Component {
             }}
           >
             <br />
-            <Link to="/features">
+            <Link to="/features" activeStyle={{ color: "#e75328" }}>
               <h1>Features</h1>
             </Link>
-            <Link to="/crna">
+            <Link to="/crna" activeStyle={{ color: "#e75328" }}>
               <h1>CRNA</h1>
             </Link>
-            <Link to="/srna">
+            <Link to="/srna" activeStyle={{ color: "#e75328" }}>
               <h1>SRNA</h1>
             </Link>
-            <Link to="/anpd">
+            <Link to="/anpd" activeStyle={{ color: "#e75328" }}>
               <h1>Program Directors</h1>
             </Link>
           </div>

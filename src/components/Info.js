@@ -36,7 +36,7 @@ export class info extends Component {
                   <li>As cost-efficient as it is content-efficient</li>
                 </ul>
                 <div className="title-color">
-                  <h1>SPECIAL RATES AVAILABLE FOR GROUP PRACTICES</h1>
+                  <h2>SPECIAL RATES AVAILABLE FOR GROUP PRACTICES</h2>
                   <p>To learn more:</p>
                   <p>
                     {" "}
@@ -68,9 +68,9 @@ export class info extends Component {
                 </Mobile>
               </Grid.Column>
               <Grid.Column>
-                <h1 className="title-color">
+                <h2 className="title-color">
                   THE SCIENCE BEHIND SELFSTUDYPLUS:
-                </h1>
+                </h2>
                 <h2 className="title-color ">
                   Individualized, Adaptive Learning
                 </h2>

@@ -1,5 +1,4 @@
 import React from "react";
-//unneeded unless links are added below. For all in-gatsby links, use <Link>. Otherwise, use <a></a> to other sites
 import { Link } from "gatsby";
 import { Grid, Button } from "semantic-ui-react";
 

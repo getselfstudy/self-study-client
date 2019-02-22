@@ -15,7 +15,7 @@ import ForYouImage from "../components/images/ForYouImage";
 
 const Desktop = props => <Responsive {...props} minWidth={992} />;
 const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />;
-const Small = props => <Responsive {...props} maxWidth={991} />;
+
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
 
@@ -49,6 +49,13 @@ class IndexPage extends React.Component {
                     learn faster and more deeply with the “questions first”
                     SelfStudyPLUS approach.{" "}
                   </p>
+                </Grid.Column>
+                <Grid.Column>
+                  <Tablet2 />
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row>
+                <Grid.Column width={8}>
                   <Button
                     style={{
                       backgroundColor: "#4599c5",
@@ -78,9 +85,6 @@ class IndexPage extends React.Component {
                     SRNA
                   </Button>
                 </Grid.Column>
-                <Grid.Column>
-                  <Tablet2 />
-                </Grid.Column>
               </Grid.Row>
             </Grid>
           </div>
@@ -98,19 +102,10 @@ class IndexPage extends React.Component {
             <Grid relaxed stackable columns={3}>
               <Grid.Row>
                 <Grid.Column>
-                  <div className="centered">
-                    {/* <Icon
-                  name="clock outline"
-                  size="huge"
-                  circular
-                  color="blue"
-                  inverted
-                />
-              */}
-                  </div>
+                  <div className="centered" />
                   <div
                     style={{
-                      width: "60%",
+                      width: "50%",
                       textAlign: "center",
                       alignItems: "center",
                       margin: "0 auto"
@@ -135,17 +130,9 @@ class IndexPage extends React.Component {
                 </Grid.Column>
                 <Grid.Column>
                   <div className="centered">
-                    {/* <Icon
-                  name="lightbulb outline"
-                  size="huge"
-                  circular
-                  color="blue"
-                  inverted
-                  style={{}}
-                /> */}
                     <div
                       style={{
-                        width: "60%",
+                        width: "50%",
                         textAlign: "center",
                         alignItems: "center",
                         margin: "0 auto"
@@ -173,19 +160,10 @@ class IndexPage extends React.Component {
                   </ul>
                 </Grid.Column>
                 <Grid.Column>
-                  <div className="centered">
-                    {/* <Icon
-                  name="child"
-                  size="huge"
-                  circular
-                  color="blue"
-                  inverted
-                  style={{}}
-                /> */}
-                  </div>
+                  <div className="centered" />
                   <div
                     style={{
-                      width: "60%",
+                      width: "50%",
                       textAlign: "center",
                       alignItems: "center",
                       margin: "0 auto"

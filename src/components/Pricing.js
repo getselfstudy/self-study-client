@@ -63,7 +63,10 @@ export class pricing extends Component {
                   <div className="pricing-header-blue">
                     <h1>SelfStudyPLUS</h1>
                   </div>
-                  <div className="pricing-header-blue-sub">CE 20 </div>
+                  <div className="pricing-header-blue-sub">
+                    {" "}
+                    <h1>CE 20</h1>{" "}
+                  </div>
                   <div>
                     <h1 style={{ paddingTop: "20px" }}> $199</h1>
                     <p> earn up to 20 hours of CE</p>
