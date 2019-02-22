@@ -12,8 +12,8 @@ export class Cpca extends Component {
           <Grid columns={3} relaxed stackable>
             <Grid.Row>
               <Grid.Column width={5}>
-                <div className="cpca-sub">
-                  <div style={{ padding: "20px", height: "100%" }}>
+                <div className="cpca-sub container-positioning-outer">
+                  <div className="container-positioning-inner">
                     <CpcaPractice />
                   </div>
                 </div>
