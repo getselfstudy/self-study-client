@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Button } from "semantic-ui-react";
-import CpcaPractice from "./images/CpcaPractice";
+import CpcaPractice from "./images/CpcaPractice.js";
 
 export class Cpca extends Component {
   render() {
@@ -8,40 +8,36 @@ export class Cpca extends Component {
       <div className="container-body">
         <br />
         <div />
-
-        <Grid columns={1} relaxed stackable>
-          <Grid.Row>
-            <Grid.Column>
-              <div className="cpca">
+        <div className="cpca">
+          <Grid columns={3} relaxed stackable>
+            <Grid.Row>
+              <Grid.Column width={4}>
                 <div className="cpca-sub">
-                  <h1
-                    className="title-color"
-                    style={{ fontSize: "3em", paddingBottom: "40px" }}
-                  >
-                    {" "}
-                    CPCA Practice
-                  </h1>
+                  <div style={{ padding: "20px" }}>
+                    <CpcaPractice />
+                  </div>
                 </div>
-                <hr className="hr-blue" />
-                <h2>CPCA Practice Assessment I</h2> <h3>$30</h3>
-                <h2>CPCA Practice Assessment II</h2>
-                <h3> $30</h3>
-                <h2>CPCA Practice Assessment I & II </h2>
-                <h3> $50</h3>
+              </Grid.Column>
+              <Grid.Column width={8}>
+                <h2>CPCA Practice Assessment I$30</h2>
+                <h2>CPCA Practice Assessment II $30</h2>
+                <h2>CPCA Practice Assessment I & II $50 </h2>
+              </Grid.Column>
+              <Grid.Column width={4}>
                 <a href="https://www.nbcrna.com/exams/cpce/practice-exam">
                   <Button
                     color="blue"
-                    size="massive"
-                    style={{ margin: "35px 0 25px" }}
+                    size="huge"
+                    style={{ margin: "50px 0 25px" }}
                   >
                     {" "}
                     LEARN MORE{" "}
                   </Button>
                 </a>
-              </div>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </div>
       </div>
     );
   }
