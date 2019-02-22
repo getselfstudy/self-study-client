@@ -1,16 +1,13 @@
 import React from "react";
 
 import { Grid } from "semantic-ui-react";
-import Responsive from "react-responsive";
+
 import Info from "../components/Info.js";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Pricing from "../components/Pricing";
 import Vimeo from "@u-wave/react-vimeo";
 import Cpca from "../components/Cpca";
-
-const Mobile = props => <Responsive {...props} maxWidth={767} />;
-const Default = props => <Responsive {...props} minWidth={768} />;
 
 const crna = () => (
   <Layout>

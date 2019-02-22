@@ -1,13 +1,13 @@
 import { Link } from "gatsby";
-import { FaBars } from "react-icons/fa";
+
 import React, { Component } from "react";
 import Responsive from "react-responsive";
-import { Grid, Dropdown, Menu } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import LogoBigHeader from "./images/LogoBigHeader.js";
 import Card from "./Card.js";
 
 const Small = props => <Responsive {...props} maxWidth={991} />;
-const Mobile = props => <Responsive {...props} maxWidth={767} />;
+
 const Default = props => <Responsive {...props} minWidth={992} />;
 
 export default class Header extends Component {

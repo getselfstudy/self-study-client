@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/layout";
-import styled from "styled-components";
+
 import SEO from "../components/seo";
 import { Button, Grid } from "semantic-ui-react";
 import Responsive from "react-responsive";
@@ -12,9 +12,6 @@ import Tablet2 from "../components/Tablet2";
 import FastImage from "../components/images/FastImage";
 import FlexibleImage from "../components/images/FlexibleImage";
 import ForYouImage from "../components/images/ForYouImage";
-
-const Desktop = props => <Responsive {...props} minWidth={992} />;
-const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />;
 
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;

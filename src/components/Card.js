@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import Button from "semantic-ui-react";
+
 import { FaBars } from "react-icons/fa";
 class Card extends Component {
   constructor() {

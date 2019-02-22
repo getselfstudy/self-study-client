@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Button } from "semantic-ui-react";
-import SelfStudyInverseBlue from "./images/SelfStudyInverseBlue";
+
 import SelfStudyInverseOrange from "./images/SelfStudyInverseOrange";
 
 export class pricingSrna extends Component {
