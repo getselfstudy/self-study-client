@@ -2,6 +2,7 @@
   line-height: 3;
 } */
 
+/* If you want white text to go over */
 * {
   font-size: 1.2rem;
   color: #605e5e;
@@ -62,9 +63,12 @@ li {
   margin: 10px 0 0;
 }
 
+/* If you're not seeing a color change 
+with the text of this item, check the actual files
+themselves to make sure it's not changed with inline css */
 .container-bottom {
   background-color: #104b87;
-  color: white;
+  color: white !important;
   padding: 20px 0 20px;
   margin: 20px 0 0;
 }

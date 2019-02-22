@@ -61,7 +61,7 @@ export class info extends Component {
                   <Phone2 />
                 </Default>
                 <Mobile>
-                  <div style={{ margin: "0 auto", maxWidth: "70%" }}>
+                  <div style={{ margin: "0 auto", maxWidth: "60%" }}>
                     <Phone1 />
                     <Phone2 />
                   </div>

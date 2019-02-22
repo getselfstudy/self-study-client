@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import Responsive from "react-responsive";
 import { Grid, Dropdown, Menu } from "semantic-ui-react";
 import LogoBig from "./images/LogoBig.js";
-
+import Card from "./Card.js";
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
 
@@ -57,6 +57,9 @@ export default class Header extends Component {
                     >
                       for Nurse Anesthesia
                     </h3>
+                    <Mobile>
+                      <Card />
+                    </Mobile>
                     {/* <Mobile>
                       <Dropdown
                         text="File"
@@ -98,38 +101,38 @@ export default class Header extends Component {
           </div>
         </div>
         <div className="container-header">
-          {/* <Default> */}
-          <nav>
-            <Link
-              to="/features"
-              className="items"
-              activeStyle={{ color: "#e75328" }}
-            >
-              Features
-            </Link>
-            <Link
-              className="items"
-              to="/crna"
-              activeStyle={{ color: "#e75328" }}
-            >
-              CRNA
-            </Link>
-            <Link
-              to="/srna"
-              className="items"
-              activeStyle={{ color: "#e75328" }}
-            >
-              SRNA
-            </Link>
-            <Link
-              to="/anpd"
-              className="items"
-              activeStyle={{ color: "#e75328" }}
-            >
-              Program Directors
-            </Link>
-          </nav>
-          {/* </Default> */}
+          <Default>
+            <nav>
+              <Link
+                to="/features"
+                className="items"
+                activeStyle={{ color: "#e75328" }}
+              >
+                Features
+              </Link>
+              <Link
+                className="items"
+                to="/crna"
+                activeStyle={{ color: "#e75328" }}
+              >
+                CRNA
+              </Link>
+              <Link
+                to="/srna"
+                className="items"
+                activeStyle={{ color: "#e75328" }}
+              >
+                SRNA
+              </Link>
+              <Link
+                to="/anpd"
+                className="items"
+                activeStyle={{ color: "#e75328" }}
+              >
+                Program Directors
+              </Link>
+            </nav>
+          </Default>
         </div>
         <div className="blue-header-line" />
       </header>

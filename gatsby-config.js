@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `SelfStudyPLUS`,
+    title: `SelfStudyPLUS `,
     description: `Whether your goal is to earn CME or to study for your residency, learn faster and more deeply with the “questions first” SelfStudyPLUS approach. `,
     author: `@selfstudy`
   },
