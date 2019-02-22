@@ -11,14 +11,14 @@ export class Cpca extends Component {
         <div className="cpca">
           <Grid columns={3} relaxed stackable>
             <Grid.Row>
-              <Grid.Column width={4}>
+              <Grid.Column width={5}>
                 <div className="cpca-sub">
                   <div style={{ padding: "20px", height: "100%" }}>
                     <CpcaPractice />
                   </div>
                 </div>
               </Grid.Column>
-              <Grid.Column width={8}>
+              <Grid.Column width={7}>
                 <h3>CPCA Practice Assessment I$30</h3>
                 <h3>CPCA Practice Assessment II $30</h3>
                 <h3>CPCA Practice Assessment I & II $50 </h3>
@@ -28,7 +28,7 @@ export class Cpca extends Component {
                   <Button
                     color="blue"
                     size="huge"
-                    style={{ margin: "50px 0 25px" }}
+                    style={{ margin: "50px 0 10px" }}
                   >
                     {" "}
                     LEARN MORE{" "}
