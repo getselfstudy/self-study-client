@@ -27,6 +27,8 @@ class IndexPage extends React.Component {
               <BannerImage />
             </Default>
           </div>
+        </div>
+        <div>
           <div>
             <Mobile>
               <BannerImageSmall />
