@@ -13,7 +13,10 @@ export class Cpca extends Component {
             <Grid.Row>
               <Grid.Column width={5}>
                 <div className="cpca-sub ">
-                  <div className="container-positioning-inner">
+                  <div
+                    className="container-positioning-inner"
+                    style={{ padding: "20px" }}
+                  >
                     <CpcaPractice />
                   </div>
                 </div>
