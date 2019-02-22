@@ -10,7 +10,6 @@ import Vimeo from "@u-wave/react-vimeo";
 
 //images served from the image folder through graphql
 import LogoBig from "../components/images/LogoBig";
-
 import FeaturesHeader from "../components/images/FeaturesHeader";
 import FeaturesPhone from "../components/images/FeaturesPhone";
 import SrnaPerson from "../components/images/SrnaPerson.js";

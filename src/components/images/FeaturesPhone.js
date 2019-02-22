@@ -17,7 +17,7 @@ const FeaturesHeader = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "FeaturesPhone.webp" }) {
+        placeholderImage: file(relativePath: { eq: "FeaturesPhone.png" }) {
           childImageSharp {
             fluid(maxWidth: 3000) {
               ...GatsbyImageSharpFluid

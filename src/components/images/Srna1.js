@@ -17,7 +17,7 @@ const Srna1 = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "Srna1.webp" }) {
+        placeholderImage: file(relativePath: { eq: "Srna1.png" }) {
           childImageSharp {
             fluid(maxWidth: 3000) {
               ...GatsbyImageSharpFluid
