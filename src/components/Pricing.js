@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Button } from "semantic-ui-react";
+import SelfStudyInverseBlue from "./images/SelfStudyInverseBlue";
+import SelfStudyInverseOrange from "./images/SelfStudyInverseOrange";
 
 export class pricing extends Component {
   render() {
@@ -11,7 +13,7 @@ export class pricing extends Component {
               <Grid.Column>
                 <div className="pricing center">
                   <div className="pricing-header">
-                    <h1>SelfStudyPLUS</h1>
+                    <SelfStudyInverseOrange />
                   </div>
                   <div>
                     <h2>
@@ -36,7 +38,7 @@ export class pricing extends Component {
                 {" "}
                 <div className="pricing">
                   <div className="pricing-header">
-                    <h1>SelfStudyPLUS</h1>
+                    <SelfStudyInverseOrange />
                   </div>
                   <div>
                     <h2>
@@ -61,7 +63,7 @@ export class pricing extends Component {
                 {" "}
                 <div className="pricing">
                   <div className="pricing-header-blue">
-                    <h1>SelfStudyPLUS</h1>
+                    <SelfStudyInverseBlue />
                   </div>
                   <div className="pricing-header-blue-sub">
                     {" "}

@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa";
 import React, { Component } from "react";
 import Responsive from "react-responsive";
 import { Grid, Dropdown, Menu } from "semantic-ui-react";
-import LogoBig from "./images/LogoBig.js";
+import LogoBigHeader from "./images/LogoBigHeader.js";
 import Card from "./Card.js";
 
 const Small = props => <Responsive {...props} maxWidth={991} />;
@@ -16,7 +16,7 @@ export default class Header extends Component {
       <header
         style={{
           top: "0",
-          overflow: "hidden",
+
           background: `#ffffff`,
 
           width: "100%",
@@ -31,29 +31,31 @@ export default class Header extends Component {
           <div className="container-body">
             <Grid relaxed stackable columns={2}>
               <Grid.Row>
-                <Grid.Column width={5} computer={5}>
+                <Grid.Column width={5} computer={5} tablet={16}>
                   <Link
                     to="/"
                     style={{
                       color: `#104b87`,
                       textDecoration: `none`,
                       marginBottom: "0",
-                      paddingBottom: "0"
+                      paddingBottom: "0",
+                      display: "block"
                     }}
                   >
-                    <LogoBig />
+                    <LogoBigHeader />
                   </Link>
                 </Grid.Column>
-                <Grid.Column width={6} computer={4}>
+                <Grid.Column width={4} computer={4} tablet={16}>
                   <div>
                     <Default>
                       <h3
                         style={{
                           color: "#104b87",
-                          textAlign: "center",
+
                           verticalAlign: "middle",
                           paddingTop: "20px",
-                          paddingRight: "0"
+                          paddingRight: "0",
+                          display: "block"
                         }}
                       >
                         for Nurse Anesthesia

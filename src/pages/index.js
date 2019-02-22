@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
         <div>
           <div>
             <Default>
-              <BannerImage style={{ overflow: "hidden" }} />
+              <BannerImage />
             </Default>
           </div>
           <div>
@@ -49,13 +49,6 @@ class IndexPage extends React.Component {
                     learn faster and more deeply with the “questions first”
                     SelfStudyPLUS approach.{" "}
                   </p>
-                </Grid.Column>
-                <Grid.Column>
-                  <Tablet2 />
-                </Grid.Column>
-              </Grid.Row>
-              <Grid.Row>
-                <Grid.Column width={8}>
                   <Button
                     style={{
                       backgroundColor: "#4599c5",
@@ -84,6 +77,9 @@ class IndexPage extends React.Component {
                     {" "}
                     SRNA
                   </Button>
+                </Grid.Column>
+                <Grid.Column>
+                  <Tablet2 />
                 </Grid.Column>
               </Grid.Row>
             </Grid>
