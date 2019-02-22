@@ -57,12 +57,11 @@ const anpd = () => (
       </p>
       <br />
       <br />
-      <PeopleBanner
-        style={{ marginBottom: "0" }}
-        className="no-margin-bottom"
-      />
     </div>
-    <div className="container-bottom centered no-margin">
+    <div className="container-body" style={{ marginBottom: " 1px" }}>
+      <PeopleBanner className="no-margin-bottom" />
+    </div>
+    <div className="container-bottom-no-margin centered ">
       {" "}
       <h1> SelfStudyPLUS: PERSONALIZED LEARNING FOR YOUR STUDENTS</h1>
     </div>

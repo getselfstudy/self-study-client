@@ -41,6 +41,7 @@ class Card extends Component {
               this.dropdownMenu = element;
             }}
           >
+            <br />
             <Link to="/features">
               <h1>Features</h1>
             </Link>

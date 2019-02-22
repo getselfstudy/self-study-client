@@ -5,8 +5,10 @@ import Responsive from "react-responsive";
 import { Grid, Dropdown, Menu } from "semantic-ui-react";
 import LogoBig from "./images/LogoBig.js";
 import Card from "./Card.js";
+
+const Small = props => <Responsive {...props} maxWidth={991} />;
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
-const Default = props => <Responsive {...props} minWidth={768} />;
+const Default = props => <Responsive {...props} minWidth={992} />;
 
 export default class Header extends Component {
   render() {
@@ -44,56 +46,37 @@ export default class Header extends Component {
                 </Grid.Column>
                 <Grid.Column width={6} computer={4}>
                   <div>
-                    <h3
-                      style={{
-                        color: "#104b87",
-                        textAlign: "center",
-                        paddingLeft: "20px",
-                        verticalAlign: "middle",
-                        paddingTop: "20px",
-                        display: "inline",
-                        paddingRight: "0"
-                      }}
-                    >
-                      for Nurse Anesthesia
-                    </h3>
-                    <Mobile>
-                      <Card />
-                    </Mobile>
-                    {/* <Mobile>
-                      <Dropdown
-                        text="File"
-                        style={{ zIndex: "1000", float: "right" }}
-                      >
-                        <Dropdown.Menu>
-                          <Dropdown.Item text="New" />
-                          <Dropdown.Item
-                            text="Open..."
-                            description="ctrl + o"
-                          />
-                          <Dropdown.Item
-                            text="Save as..."
-                            description="ctrl + s"
-                          />
-                          <Dropdown.Item text="Rename" description="ctrl + r" />
-                          <Dropdown.Item text="Make a copy" />
-                          <Dropdown.Item icon="folder" text="Move to folder" />
-                          <Dropdown.Item icon="trash" text="Move to trash" />
-                          <Dropdown.Divider />
-                          <Dropdown.Item text="Download As..." />
-                          <Dropdown.Item text="Publish To Web" />
-                          <Dropdown.Item text="E-mail Collaborators" />
-                        </Dropdown.Menu>
-                      </Dropdown> */}
-                    {/* <FaBars
+                    <Default>
+                      <h3
                         style={{
-                          display: "inline",
-                          float: "right",
-                          paddingLeft: 0,
-                          position: "relative"
+                          color: "#104b87",
+                          textAlign: "center",
+                          verticalAlign: "middle",
+                          paddingTop: "20px",
+                          paddingRight: "0"
                         }}
-                      />
-                    </Mobile> */}
+                      >
+                        for Nurse Anesthesia
+                      </h3>
+                    </Default>
+                    <Small>
+                      <h3
+                        style={{
+                          color: "#104b87",
+                          textAlign: "center",
+
+                          paddingRight: "0"
+                        }}
+                      >
+                        for Nurse Anesthesia
+                      </h3>
+                    </Small>
+                    <br />
+                    <Small>
+                      <div style={{ textAlign: "center" }}>
+                        <Card />
+                      </div>
+                    </Small>
                   </div>
                 </Grid.Column>
               </Grid.Row>

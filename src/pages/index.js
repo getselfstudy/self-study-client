@@ -15,6 +15,7 @@ import ForYouImage from "../components/images/ForYouImage";
 
 const Desktop = props => <Responsive {...props} minWidth={992} />;
 const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />;
+const Small = props => <Responsive {...props} maxWidth={991} />;
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Default = props => <Responsive {...props} minWidth={768} />;
 
@@ -52,8 +53,12 @@ class IndexPage extends React.Component {
                     style={{
                       backgroundColor: "#4599c5",
                       color: "white",
-                      width: "45%"
+                      width: "45%",
+                      padding: "20px",
+                      margin: "5px",
+                      fontSize: "1.3em"
                     }}
+                    className="homepage-button"
                   >
                     {" "}
                     CRNA
@@ -63,7 +68,10 @@ class IndexPage extends React.Component {
                     style={{
                       backgroundColor: "#6db031",
                       color: "white",
-                      width: "45%"
+                      width: "45%",
+                      padding: "20px",
+                      margin: "5px",
+                      fontSize: "1.3em"
                     }}
                   >
                     {" "}
