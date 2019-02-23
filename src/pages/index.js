@@ -47,34 +47,37 @@ class IndexPage extends React.Component {
                       NCE, learn faster and more deeply with the “questions
                       first” SelfStudyPLUS approach.{" "}
                     </p>
-                    <Button
-                      style={{
-                        backgroundColor: "#4599c5",
-                        color: "white",
-                        width: "45%",
-                        padding: "20px",
-                        margin: "5px",
-                        fontSize: "1.3em"
-                      }}
-                      className="homepage-button"
-                    >
-                      {" "}
-                      CRNA
-                    </Button>
-
-                    <Button
-                      style={{
-                        backgroundColor: "#6db031",
-                        color: "white",
-                        width: "45%",
-                        padding: "20px",
-                        margin: "5px",
-                        fontSize: "1.3em"
-                      }}
-                    >
-                      {" "}
-                      SRNA
-                    </Button>
+                    <Link to="/crna">
+                      <Button
+                        style={{
+                          backgroundColor: "#4599c5",
+                          color: "white",
+                          width: "45%",
+                          padding: "20px",
+                          margin: "5px",
+                          fontSize: "1.3em"
+                        }}
+                        className="homepage-button"
+                      >
+                        {" "}
+                        CRNA
+                      </Button>
+                    </Link>
+                    <Link to="/srna">
+                      <Button
+                        style={{
+                          backgroundColor: "#6db031",
+                          color: "white",
+                          width: "45%",
+                          padding: "20px",
+                          margin: "5px",
+                          fontSize: "1.3em"
+                        }}
+                      >
+                        {" "}
+                        SRNA
+                      </Button>
+                    </Link>
                   </Grid.Column>
                   <Grid.Column>
                     <Tablet2 />
